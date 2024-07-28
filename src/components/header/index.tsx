@@ -1,7 +1,8 @@
 import { cn } from "@/utils";
-import "./header.css";
-import { RiPhoneFill, RiGift2Fill, RiMap2Line } from "react-icons/ri";
 import { Noto_Serif_Display } from "next/font/google";
+import { RiGift2Fill, RiMap2Line, RiPhoneFill } from "react-icons/ri";
+import { BackgroundCover } from "./BackgroundCover";
+import "./header.css";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -11,14 +12,7 @@ export function Header() {
   return (
     <header>
       <section className="h-screen overflow-hidden relative">
-        <img
-          className="w-full h-full object-cover bg-no-repeat bg-cover"
-          src="https://jejuwedding.net/wp-content/uploads/2024/01/11.jpg"
-          style={{
-            backgroundPositionX: "center",
-            backgroundPositionY: "center",
-          }}
-        />
+        <BackgroundCover />
         <div className="max-w-maxWidth mx-auto my-0 px-5 py-0">
           <div className="banner-container text-textWhite">
             <Title />

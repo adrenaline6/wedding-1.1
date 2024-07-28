@@ -11,7 +11,8 @@ const noto = Noto_Serif_Display({
 //edit info
 const AboutInfo = {
   bride: {
-    image: "https://jejuwedding.net/wp-content/uploads/2024/01/27.80663.jpg",
+    image:
+      "https://res.cloudinary.com/dl764aic5/image/upload/v1722167263/va-wedding/bride_pihpy2.jpg",
     name: "Thu Trang",
     dob: "04/01/1998",
     desc: " Khác với chú rể, cô dâu thuộc tuýp người hướng nội, đi du học từ nhỏ nên không có nhiều bạn bè.",
@@ -22,7 +23,8 @@ const AboutInfo = {
     },
   },
   groom: {
-    image: "https://jejuwedding.net/wp-content/uploads/2024/01/27.80252-1.jpg",
+    image:
+      "https://res.cloudinary.com/dl764aic5/image/upload/v1722167076/va-wedding/groom_hnqedq.jpg",
     name: "Việt Anh",
     dob: "04/01/1999",
     desc: "Chú rể là người cởi mở, thân thiện, giao tiếp tốt và thuộc tuýp người hướng ngoại.",
