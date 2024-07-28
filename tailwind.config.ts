@@ -7,11 +7,22 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      windSong: ["WindSong"],
+      notoSerifDisplay: ["NotoSerifDisplay"],
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        background: "#fcf5f2",
+        primaryColor: "#6D3E28",
+        secondaryColor: "#6D3E28",
+        textWhite: "#fff",
+        textBlack: "#000",
+        textGray: "#6e6e6e",
+        textDảl: "#2c2c2c",
+      },
+      maxWidth: {
+        maxWidth: "1024px",
       },
     },
   },
