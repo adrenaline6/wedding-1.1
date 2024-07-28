@@ -10,6 +10,7 @@ const config: Config = {
     fontFamily: {
       windSong: ["WindSong"],
       notoSerifDisplay: ["NotoSerifDisplay"],
+      quickSand: ["Quicksand", "sans-serif"],
     },
     extend: {
       colors: {

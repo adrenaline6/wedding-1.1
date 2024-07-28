@@ -1,0 +1,36 @@
+.section-thankyou {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: theme("colors.textWhite");
+  text-align: center;
+}
+
+.thankyou-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  object-position: center top;
+}
+
+.thankyou-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg_overlay {
+  box-shadow: inset 0 0 0 2000px rgba(0 0 0 /0.4);
+}
+.social {
+  display: grid;
+  row-gap: 16px;
+  margin-top: 80px;
+  text-align: center;
+}

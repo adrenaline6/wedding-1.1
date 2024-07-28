@@ -1,9 +1,127 @@
 import React from "react";
+import "./about.css";
+import { Noto_Serif_Display } from "next/font/google";
+import { cn } from "@/utils";
+import { RiPhoneFill, RiFacebookFill, RiInstagramFill } from "react-icons/ri";
+
+const noto = Noto_Serif_Display({
+  preload: false,
+});
+
+//edit info
+const AboutInfo = {
+  bride: {
+    image: "https://jejuwedding.net/wp-content/uploads/2024/01/27.80663.jpg",
+    name: "Thu Trang",
+    dob: "04/01/1998",
+    desc: " Khác với chú rể, cô dâu thuộc tuýp người hướng nội, đi du học từ nhỏ nên không có nhiều bạn bè.",
+    social: {
+      tel: "+84902618766",
+      fb: "https://www.facebook.com/jan4398",
+      insta: "https://www.instagram.com/jan4398/",
+    },
+  },
+  groom: {
+    image: "https://jejuwedding.net/wp-content/uploads/2024/01/27.80252-1.jpg",
+    name: "Việt Anh",
+    dob: "04/01/1999",
+    desc: "Chú rể là người cởi mở, thân thiện, giao tiếp tốt và thuộc tuýp người hướng ngoại.",
+    social: {
+      tel: "+84902618766",
+      fb: "https://www.facebook.com/adren9728",
+      insta: "https://www.instagram.com/adrenalineee_404",
+    },
+  },
+};
 
 export function About() {
   return (
-    <div className="mt-20 min-h-[50vh]">
-      <p className="text-black">About</p>
-    </div>
+    <section id="about">
+      <div className="container">
+        <div className="section-heading">
+          <p className="font-base text-center mb-1"></p>
+          <h2
+            className={cn(
+              "text-[32px] font-bold text-center text-primaryColor",
+              noto.className
+            )}
+          >
+            Giới Thiệu{" "}
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div
+            className="about-card"
+            style={{
+              order: 2,
+            }}
+          >
+            <div className="about-media">
+              <img
+                src={AboutInfo.bride.image}
+                alt={AboutInfo.bride.name}
+                className="bride_img"
+              />
+            </div>
+            <div
+              className="about-body aos-init"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <h3 className={cn("text-[32px]", noto.className)}>
+                {AboutInfo.bride.name}
+              </h3>
+              <p className="text-base font-quickSand">{AboutInfo.bride.dob}</p>
+              <p className="text-base font-quickSand">{AboutInfo.bride.desc}</p>
+              <div className="social-link">
+                <a href={`tel:${AboutInfo.bride.social.tel}`}>
+                  <RiPhoneFill className="hover:text-primaryColor" />
+                </a>
+                <a href={AboutInfo.bride.social.fb} target="_blank">
+                  <i className="ri-facebook-fill"></i>{" "}
+                  <RiFacebookFill className="hover:text-primaryColor" />
+                </a>
+                <a href={AboutInfo.bride.social.insta} target="_blank">
+                  <RiInstagramFill className="hover:text-primaryColor" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="about-card" style={{ order: 1 }}>
+            <div className="about-media">
+              <img
+                src={AboutInfo.groom.image}
+                alt={AboutInfo.groom.name}
+                className="groom_img"
+              />
+            </div>
+            <div
+              className="about-body aos-init"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <h3 className={cn("text-[32px]", noto.className)}>
+                {AboutInfo.groom.name}
+              </h3>
+              <p className="text-base font-quickSand">{AboutInfo.groom.dob}</p>
+              <p className="text-base font-quickSand">{AboutInfo.groom.desc}</p>
+              <div className="social-link">
+                <a href={`tel:${AboutInfo.groom.social.tel}`}>
+                  <RiPhoneFill className="hover:text-primaryColor" />
+                </a>
+                <a href={AboutInfo.groom.social.fb} target="_blank">
+                  <i className="ri-facebook-fill"></i>{" "}
+                  <RiFacebookFill className="hover:text-primaryColor" />
+                </a>
+                <a href={AboutInfo.groom.social.insta} target="_blank">
+                  <RiInstagramFill className="hover:text-primaryColor" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

@@ -1,5 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=WindSong:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+.social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.social-link a {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid theme("colors.textWhite");
+}
+
+.social-link a:hover {
+  border-color: theme("colors.primaryColor");
+  transition: background-color 2s;
+}
+
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

@@ -1,11 +1,21 @@
-import { About, Header } from "@/components";
-import Image from "next/image";
+import {
+  About,
+  Countdown,
+  Gift,
+  Header,
+  ThankYou,
+  Timeline,
+} from "@/components";
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <Header />
       <About />
+      <Countdown />
+      <Timeline />
+      <Gift />
+      <ThankYou />
     </main>
   );
 }

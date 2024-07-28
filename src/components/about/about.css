@@ -1,0 +1,60 @@
+#about {
+  margin-top: 80px;
+  min-height: 50vh;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-heading {
+  margin-bottom: 40px;
+}
+
+.about-container {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, 320px 1fr);
+}
+
+.about-card {
+  position: relative;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.about-media {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.about-media img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center top;
+}
+
+.about-body {
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  background-image: linear-gradient(
+    to top,
+    theme("colors.primaryColor"),
+    transparent
+  );
+  color: theme("colors.textWhite");
+  min-width: 100%;
+}
+
+[data-aos^="fade"][data-aos^="fade"].aos-animate {
+  opacity: 1;
+  transform: translateZ(0);
+}
