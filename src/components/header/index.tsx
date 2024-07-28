@@ -1,6 +1,11 @@
 import { cn } from "@/utils";
 import "./header.css";
 import { RiPhoneFill, RiGift2Fill, RiMap2Line } from "react-icons/ri";
+import { Noto_Serif_Display } from "next/font/google";
+
+const noto = Noto_Serif_Display({
+  preload: false,
+});
 
 export function Header() {
   return (
@@ -37,7 +42,12 @@ const Title = () => {
 };
 const Name = () => {
   return (
-    <div className="font-notoSerifDisplay text-[64px] text-center">
+    <div
+      className={cn(
+        "font-notoSerifDisplay text-[64px] text-center",
+        noto.className
+      )}
+    >
       Việt Anh
       <br />
       &amp;
@@ -48,7 +58,12 @@ const Name = () => {
 };
 const Date = () => {
   return (
-    <div className="border-y-[1px] border-solid border-white p-3 font-notoSerifDisplay">
+    <div
+      className={cn(
+        "border-y-[1px] border-solid border-white p-3",
+        noto.className
+      )}
+    >
       <div className="group-date">
         <span className="border-y-[1px] border-solid border-white p-1 text-center">
           Thứ 7
