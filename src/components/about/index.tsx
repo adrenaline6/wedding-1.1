@@ -14,8 +14,8 @@ const AboutInfo = {
     image:
       "https://res.cloudinary.com/dl764aic5/image/upload/v1722167263/va-wedding/bride_pihpy2.jpg",
     name: "Thu Trang",
-    dob: "04/01/1998",
-    desc: " Khác với chú rể, cô dâu thuộc tuýp người hướng nội, đi du học từ nhỏ nên không có nhiều bạn bè.",
+    dob: "04/03/1998",
+    desc: " Khác với chú rể, cô dâu thuộc tuýp người hướng nội, đi du học tại Thanh Xuân nên không có nhiều bạn bè.",
     social: {
       tel: "+84902618766",
       fb: "https://www.facebook.com/jan4398",
@@ -26,7 +26,7 @@ const AboutInfo = {
     image:
       "https://res.cloudinary.com/dl764aic5/image/upload/v1722167076/va-wedding/groom_hnqedq.jpg",
     name: "Việt Anh",
-    dob: "04/01/1999",
+    dob: "26/11/1999",
     desc: "Chú rể là người cởi mở, thân thiện, giao tiếp tốt và thuộc tuýp người hướng ngoại.",
     social: {
       tel: "+84902618766",
