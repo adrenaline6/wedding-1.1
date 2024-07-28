@@ -1,8 +1,8 @@
-import React from "react";
-import "./about.css";
-import { Noto_Serif_Display } from "next/font/google";
 import { cn } from "@/utils";
-import { RiPhoneFill, RiFacebookFill, RiInstagramFill } from "react-icons/ri";
+import { Noto_Serif_Display } from "next/font/google";
+import { RiFacebookFill, RiInstagramFill, RiPhoneFill } from "react-icons/ri";
+import { Review } from "../review";
+import "./about.css";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -66,11 +66,7 @@ export function About() {
                 className="bride_img"
               />
             </div>
-            <div
-              className="about-body aos-init"
-              data-aos="fade-up"
-              data-aos-duration="3000"
-            >
+            <Review className="about-body aos-init" once={false}>
               <h3 className={cn("text-[32px]", noto.className)}>
                 {AboutInfo.bride.name}
               </h3>
@@ -88,7 +84,7 @@ export function About() {
                   <RiInstagramFill className="hover:text-primaryColor" />
                 </a>
               </div>
-            </div>
+            </Review>
           </div>
           <div className="about-card" style={{ order: 1 }}>
             <div className="about-media">
@@ -98,11 +94,7 @@ export function About() {
                 className="groom_img"
               />
             </div>
-            <div
-              className="about-body aos-init"
-              data-aos="fade-up"
-              data-aos-duration="3000"
-            >
+            <Review className="about-body aos-init" once={false}>
               <h3 className={cn("text-[32px]", noto.className)}>
                 {AboutInfo.groom.name}
               </h3>
@@ -120,7 +112,7 @@ export function About() {
                   <RiInstagramFill className="hover:text-primaryColor" />
                 </a>
               </div>
-            </div>
+            </Review>
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ import {
   RiPinterestFill,
   RiTwitterXFill,
 } from "react-icons/ri";
+import { Review } from "../review";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -24,7 +25,7 @@ export function ThankYou() {
           objectPosition: "center center",
         }}
       />
-      <div className="thankyou-body container">
+      <Review className="thankyou-body container">
         <h2
           className={cn(
             noto.className,
@@ -61,7 +62,7 @@ export function ThankYou() {
             </a>
           </div>
         </div>
-      </div>
+      </Review>
     </section>
   );
 }

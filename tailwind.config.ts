@@ -20,7 +20,7 @@ const config: Config = {
         textWhite: "#fff",
         textBlack: "#000",
         textGray: "#6e6e6e",
-        textDảl: "#2c2c2c",
+        textDark: "#2c2c2c",
       },
       maxWidth: {
         maxWidth: "1024px",

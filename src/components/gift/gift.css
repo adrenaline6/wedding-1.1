@@ -1,0 +1,19 @@
+.section-gift {
+  padding: 80px 0;
+  background-image: linear-gradient(to top, theme("colors.background"), #fff);
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.button {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* transition: var(--transition); */
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+}

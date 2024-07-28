@@ -40,6 +40,10 @@
   object-position: center top;
 }
 
+[data-aos^="fade"][data-aos^="fade"].aos-animate {
+  opacity: 1;
+  transform: translateZ(0);
+}
 .about-body {
   position: absolute;
   padding: 20px;
@@ -52,9 +56,4 @@
   );
   color: theme("colors.textWhite");
   min-width: 100%;
-}
-
-[data-aos^="fade"][data-aos^="fade"].aos-animate {
-  opacity: 1;
-  transform: translateZ(0);
 }
