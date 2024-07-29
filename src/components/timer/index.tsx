@@ -12,7 +12,7 @@ const noto = Noto_Serif_Display({
 });
 
 // const weddingDay = dayjs("2024-07-29 14:55:00", "YYYY-MM-DD HH:mm:ss");
-const weddingDay = dayjs("2024-09-02 09:15:00", "YYYY-MM-DD HH:mm:ss");
+const weddingDay = dayjs("2024-09-08 11:00:00", "YYYY-MM-DD HH:mm:ss");
 
 export function Timer() {
   const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining());
