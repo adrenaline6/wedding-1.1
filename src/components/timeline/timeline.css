@@ -1,0 +1,64 @@
+.time-line-section {
+  display: grid;
+  position: relative;
+  justify-content: center;
+  min-height: 100vh;
+  color: theme("colors.textWhite");
+  padding: 120px 0;
+}
+.section-heading {
+  margin-bottom: 40px;
+}
+.timeline-list {
+  position: relative;
+  display: grid;
+  row-gap: 40px;
+}
+.timeline-list::before {
+  content: "";
+  width: 1px;
+  height: 90%;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) !important;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+.timeline-media {
+  background-color: theme("colors.primaryColor");
+  padding: 8px;
+  border-radius: 12px;
+}
+.timeline-media img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.timeline-body {
+  display: grid;
+  justify-content: left;
+  width: 100%;
+}
+.timeline-body .story-date {
+  font-size: 32px;
+}
+
+.timeline-body .title {
+  font-size: 20px;
+  color: theme("colors.textWhite");
+}
+
+.timeline-item:nth-child(even) .timeline-media {
+  order: 1;
+}

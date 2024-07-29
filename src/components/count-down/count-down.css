@@ -1,0 +1,110 @@
+#countdown-section {
+  margin-top: 80px;
+  padding: 80px 0;
+}
+
+.count-down {
+  background: theme("colors.primaryColor");
+  padding: 20px;
+  border-radius: 120px 120px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: theme("colors.textWhite");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#countdown {
+  margin-top: 40px;
+  display: flex;
+  row-gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+#content {
+  display: none;
+  padding: 1rem;
+}
+
+#countdown li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: theme("colors.textWhite");
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 20px 10px;
+  border-radius: 999px;
+  border: 1px solid theme("colors.textWhite");
+}
+#countdown ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.invitation-container {
+  padding: 20px;
+  /* display: grid; */
+  gap: 20px;
+}
+
+.invitation-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 12px;
+  background-color: theme("colors.textWhite");
+  border-radius: 12px;
+  text-align: center;
+}
+
+.invitation-card img {
+  max-width: 100%;
+  width: 320px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  padding: 8px;
+  background-color: theme("colors.textWhite");
+  border-radius: 999px 999px 0 0;
+}
+
+.invi_time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.invi_group_time {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 8px;
+}
+
+.invi_date_text,
+.invi_year_text {
+  border-top: 1px solid theme("colors.primaryColor");
+  border-bottom: 1px solid theme("colors.primaryColor");
+  padding: 4px 0;
+}
+
+.invi_date_number {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: theme("colors.primaryColor");
+  font-size: 44px;
+}
+
+.invitation-card .social-link a {
+  color: theme("colors.primaryColor");
+  border: 1px solid theme("colors.primaryColor");
+}

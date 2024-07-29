@@ -25,9 +25,6 @@
   align-items: center;
 }
 
-.bg_overlay {
-  box-shadow: inset 0 0 0 2000px rgba(0 0 0 /0.4);
-}
 .social {
   display: grid;
   row-gap: 16px;
