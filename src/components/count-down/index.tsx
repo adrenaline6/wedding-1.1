@@ -1,7 +1,5 @@
-import React from "react";
-import "./count-down.css";
-import { Noto_Serif_Display } from "next/font/google";
 import { cn } from "@/utils";
+import { Noto_Serif_Display } from "next/font/google";
 import {
   RiFacebookFill,
   RiImageCircleFill,
@@ -9,7 +7,8 @@ import {
   RiPhoneFill,
   RiTwitterXFill,
 } from "react-icons/ri";
-import { Review } from "../review";
+import { Timer } from "../timer";
+import "./count-down.css";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -59,7 +58,7 @@ export function Countdown() {
           <h2
             className={cn(noto.className, "text-[32px] font-bold text-center")}
           >
-            Save The Date{" "}
+            Save The Date
           </h2>
           <svg
             className="heartbeat"
@@ -77,68 +76,7 @@ export function Countdown() {
               d="M8.106 18.247C5.298 16.083 2 13.542 2 9.137C2 4.274 7.5.825 12 5.501C16.5.825 22 4.274 22 9.137c0 .834-.118 1.6-.329 2.31a4.203 4.203 0 0 0-2.619-.947c-.89-.005-1.758.274-2.553.81c-1.39-.933-2.956-1.058-4.33-.395c-1.635.79-2.669 2.556-2.669 4.484c0 2.306 1.149 3.923 2.342 5.095c-.948-.076-1.897-.808-2.88-1.583c-.277-.219-.564-.44-.856-.664Z"
             ></path>
           </svg>
-          <div
-            id="countdown"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            className="aos-init aos-animate"
-          >
-            <Review once={false}>
-              <ul>
-                <li className="font-quickSand">
-                  <span
-                    id="days"
-                    className={cn(
-                      noto.className,
-                      "text-[32px] text-center font-semibold block"
-                    )}
-                  >
-                    161
-                  </span>
-                  ngày
-                </li>
-                <li className="font-quickSand">
-                  <span
-                    id="hours"
-                    className={cn(
-                      noto.className,
-                      "text-[32px] text-center font-semibold block"
-                    )}
-                  >
-                    13
-                  </span>
-                  giờ
-                </li>
-                <li className="font-quickSand">
-                  <span
-                    id="minutes"
-                    className={cn(
-                      noto.className,
-                      "text-[32px] text-center font-semibold block"
-                    )}
-                  >
-                    53
-                  </span>
-                  phút
-                </li>
-                <li className="font-quickSand">
-                  <span
-                    id="seconds"
-                    className={cn(
-                      noto.className,
-                      "text-[32px] text-center font-semibold block"
-                    )}
-                  >
-                    40
-                  </span>
-                  giây
-                </li>
-              </ul>
-            </Review>
-          </div>
-          <div id="content" className="emoji">
-            <span>Đã kết hôn</span>
-          </div>
+          <Timer />
           {/* <script>var date = "07" var month = "01"</script> */}
         </div>
 
