@@ -64,7 +64,7 @@ const Date = () => {
         </span>
         <span className="font-bold text-[64px] text-center">06</span>
         <span className="border-y-[1px] border-solid border-white p-1 text-center">
-          10h45
+          09h45
         </span>
       </div>
       <span>Tháng 09</span>
