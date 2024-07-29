@@ -11,7 +11,9 @@
   "dependencies": {
     "@fancyapps/ui": "^5.0.36",
     "clsx": "^2.1.1",
+    "csv-parser": "^3.0.0",
     "dayjs": "^1.11.12",
+    "fast-csv": "^5.0.1",
     "framer-motion": "^11.3.19",
     "next": "14.2.5",
     "react": "^18",

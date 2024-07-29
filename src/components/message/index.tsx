@@ -1,12 +1,65 @@
-import React from "react";
-import "./message.css";
+"use client";
+import { CheerMessage } from "@/model";
 import { cn } from "@/utils";
 import { Noto_Serif_Display } from "next/font/google";
+import { useEffect, useRef, useState } from "react";
+import "./message.css";
 
 const noto = Noto_Serif_Display({
   preload: false,
 });
 export function Message() {
+  const [data, setData] = useState<CheerMessage[]>([]);
+
+  const getData = () => {
+    fetch("/api/read-csv")
+      .then((response) => response.json())
+      .then((data) => {
+        const dataR = [...(data ?? [])].reverse();
+        setData(dataR);
+      })
+      .catch((error) => console.error("Error:", error));
+  };
+
+  useEffect(() => {
+    getData();
+
+    return () => {};
+  }, []);
+
+  const [name, setName] = useState("");
+  const [text, setText] = useState("");
+
+  const listRef = useRef<HTMLDivElement>(null);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const dataToWrite = [{ from: name.trim(), message: text.trim() }];
+
+    try {
+      const response = await fetch("/api/write-csv", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ data: dataToWrite }),
+      });
+
+      if (response.ok) {
+        setName("");
+        setText("");
+
+        getData();
+        listRef.current?.scrollTo({ top: 0 });
+      } else {
+        console.error("Error writing data");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+
   return (
     <section
       id="message"
@@ -19,59 +72,29 @@ export function Message() {
     >
       <div className="message-container container">
         <h2 className="section-title">Gửi lời chúc đến cặp đôi</h2>
-        <div className="list_message">
-          <div className="message-item">
-            {" "}
-            <h3 className={cn(noto.className, "user_message")}>3</h3>{" "}
-            <p className="message_body"></p>
-            <p>3</p>
-            <p></p>{" "}
-          </div>
-          <div className="message-item">
-            {" "}
-            <h3 className="user_message">1</h3> <p className="message_body"></p>
-            <p>2</p>
-            <p></p>{" "}
-          </div>
-          <div className="message-item">
-            {" "}
-            <h3 className="user_message">JEJU Wedding</h3>{" "}
-            <p className="message_body"></p>
-            <p>Happy Wedding!</p>
-            <p></p>{" "}
-          </div>
-          <div className="message-item">
-            {" "}
-            <h3 className="user_message">
-              JEJU Wedding{" "}
-              <img
-                draggable="false"
-                role="img"
-                className="emoji"
-                alt="❤️"
-                src="https://s.w.org/images/core/emoji/15.0.3/svg/2764.svg"
-              />
-            </h3>{" "}
-            <p className="message_body"></p>
-            <p>
-              Happy Wedding!
-              <br />
-              Trăm năm hạnh phúc, sớm sinh quý tử nha{" "}
-              <img
-                draggable="false"
-                role="img"
-                className="emoji"
-                alt="🫶🏻"
-                src="https://s.w.org/images/core/emoji/15.0.3/svg/1faf6-1f3fb.svg"
-              />
-            </p>
-            <p></p>{" "}
-          </div>
+        <div className="list_message" ref={listRef}>
+          {data.map((item) => {
+            return (
+              <div className="message-item" key={item.id}>
+                <h3 className={cn(noto.className, "user_message")}>
+                  {item.from}
+                </h3>
+                <p className="message_body"></p>
+                <p>{item.message}</p>
+                <p></p>
+              </div>
+            );
+          })}
         </div>
 
         <div className="form-message">
           <h3 className="form-title">Gửi lời chúc</h3>
-          <form action="" id="messageForm" method="POST">
+          <form
+            action=""
+            id="messageForm"
+            method="POST"
+            onSubmit={handleSubmit}
+          >
             <input type="hidden" id="postId" value="236" />
             <div className="input-group">
               <label htmlFor="">Tên của bạn</label>
@@ -79,8 +102,9 @@ export function Message() {
                 id="m_name"
                 type="text"
                 className="input"
-                value=""
                 required
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className="input-group">
@@ -89,9 +113,11 @@ export function Message() {
                 id="m_text"
                 className="input-text"
                 name=""
-                cols="30"
-                rows="5"
+                cols={30}
+                rows={5}
                 required
+                value={text}
+                onChange={(e) => setText(e.target.value)}
               ></textarea>
             </div>
             <button type="submit" className="btn btn-primary send_message">
