@@ -12,14 +12,14 @@ import {
 export default function Home() {
   return (
     <main>
-      {/* <Header />
+      <Header />
       <About />
       <Countdown />
-      <Timeline /> */}
+      <Timeline />
       <Message />
-      {/* <Gift />
+      <Gift />
       <ThankYou />
-      <FloatButton /> */}
+      <FloatButton />
     </main>
   );
 }
