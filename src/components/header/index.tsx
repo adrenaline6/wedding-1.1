@@ -3,6 +3,8 @@ import { Noto_Serif_Display } from "next/font/google";
 import { RiGift2Fill, RiMap2Line, RiPhoneFill } from "react-icons/ri";
 import { BackgroundCover } from "./BackgroundCover";
 import "./header.css";
+import { AboutInfo, CountDownPlace, weekdays } from "@/constants";
+import dayjs from "dayjs";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -42,14 +44,18 @@ const Name = () => {
         noto.className
       )}
     >
-      Việt Anh
+      {AboutInfo.groom.name}
       <br />
       &amp;
       <br />
-      Thu Trang
+      {AboutInfo.bride.name}
     </div>
   );
 };
+
+const time = CountDownPlace.groom.timeStamp;
+const date = dayjs.unix(time);
+
 const Date = () => {
   return (
     <div
@@ -59,24 +65,27 @@ const Date = () => {
       )}
     >
       <div className="group-date">
-        <span className="border-y-[1px] border-solid border-white p-1 text-center">
-          Thứ 7
+        <span className="border-y-[1px] border-solid border-white p-1 text-center uppercase">
+          {weekdays[date.day()]}
         </span>
-        <span className="font-bold text-[64px] text-center">06</span>
+        <span className="font-bold text-[64px] text-center">
+          {(date.day() + 1).toString().padStart(2, "0")}
+        </span>
         <span className="border-y-[1px] border-solid border-white p-1 text-center">
-          09h45
+          {date.hour().toString().padStart(2, "0")}:
+          {date.minute().toString().padStart(2, "0")}
         </span>
       </div>
-      <span>Tháng 09</span>
+      <span>Tháng {date.month() + 1}</span>
       {". "}
-      <span>2024</span>
+      <span>{date.year()}</span>
       <div className="group-add">
         <p className="font-windSong text-base font-light">
           Hôn lễ được tổ chức tại
         </p>
-        <span className="text-xl">Luxury Palace</span>
+        <span className="text-xl">{CountDownPlace.groom.name}</span>
         <span className="font-light text-base">
-          171 Nguyễn Thái Sơn, P8, Gò Vấp
+          {CountDownPlace.groom.address}
         </span>
       </div>
     </div>

@@ -1,3 +1,4 @@
+import { AboutInfo } from "@/constants";
 import { cn } from "@/utils";
 import { Noto_Serif_Display } from "next/font/google";
 import { RiFacebookFill, RiInstagramFill, RiPhoneFill } from "react-icons/ri";
@@ -7,34 +8,6 @@ import "./about.css";
 const noto = Noto_Serif_Display({
   preload: false,
 });
-
-//edit info
-const AboutInfo = {
-  bride: {
-    image:
-      "https://res.cloudinary.com/dl764aic5/image/upload/v1722167263/va-wedding/bride_pihpy2.jpg",
-    name: "Thu Trang",
-    dob: "04/03/1998",
-    desc: " Khác với chú rể, cô dâu thuộc tuýp người hướng nội, đi du học tại Thanh Xuân nên không có nhiều bạn bè.",
-    social: {
-      tel: "+84902618766",
-      fb: "https://www.facebook.com/jan4398",
-      insta: "https://www.instagram.com/jan4398/",
-    },
-  },
-  groom: {
-    image:
-      "https://res.cloudinary.com/dl764aic5/image/upload/v1722167076/va-wedding/groom_hnqedq.jpg",
-    name: "Việt Anh",
-    dob: "26/11/1999",
-    desc: "Chú rể là người cởi mở, thân thiện, giao tiếp tốt và thuộc tuýp người hướng ngoại.",
-    social: {
-      tel: "+84902618766",
-      fb: "https://www.facebook.com/adren9728",
-      insta: "https://www.instagram.com/adrenalineee_404",
-    },
-  },
-};
 
 export function About() {
   return (
@@ -48,7 +21,7 @@ export function About() {
               noto.className
             )}
           >
-            Giới Thiệu{" "}
+            Giới Thiệu
           </h2>
         </div>
 

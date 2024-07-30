@@ -3,3 +3,10 @@ export interface CheerMessage {
   from: string;
   message: string;
 }
+
+export interface TimeLineItem {
+  img: string;
+  date: string;
+  title: string;
+  desc: string;
+}

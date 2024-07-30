@@ -1,9 +1,10 @@
 "use client";
+import { WeddingDate } from "@/constants";
 import { cn } from "@/utils";
-import { Noto_Serif_Display } from "next/font/google";
-import { Review } from "../review";
 import dayjs from "dayjs";
+import { Noto_Serif_Display } from "next/font/google";
 import { useEffect, useState } from "react";
+import { Review } from "../review";
 const duration = require("dayjs/plugin/duration");
 dayjs.extend(duration);
 
@@ -11,8 +12,7 @@ const noto = Noto_Serif_Display({
   preload: false,
 });
 
-// const weddingDay = dayjs("2024-07-29 14:55:00", "YYYY-MM-DD HH:mm:ss");
-const weddingDay = dayjs("2024-09-02 09:15:00", "YYYY-MM-DD HH:mm:ss");
+const weddingDay = dayjs(WeddingDate, "YYYY-MM-DD HH:mm:ss");
 
 export function Timer() {
   const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining());

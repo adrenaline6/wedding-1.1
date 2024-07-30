@@ -9,38 +9,19 @@ import {
 } from "react-icons/ri";
 import { Timer } from "../timer";
 import "./count-down.css";
+import {
+  CountDownPlace,
+  CountDownBackgroundCover,
+  weekdays,
+} from "@/constants";
+import dayjs from "dayjs";
 
 const noto = Noto_Serif_Display({
   preload: false,
 });
 
-const imgs = {
-  backgroundCover:
-    "https://res.cloudinary.com/dl764aic5/image/upload/v1722235544/va-wedding/Bia_2_cgxlzc.jpg",
-};
-
-const place = {
-  groom: {
-    img: "https://res.cloudinary.com/dl764aic5/image/upload/v1722235753/va-wedding/DSC01802_1_1_bc28ot.jpg",
-    name: "Luxury Place",
-    address: "171 Nguyễn Thái Sơn , P8, Quận Gò Vấp",
-    time: "10:45",
-    date: "Thứ Hai ",
-    day: "06",
-    month: "01",
-    year: "2025",
-  },
-  bride: {
-    img: "https://res.cloudinary.com/dl764aic5/image/upload/v1722235847/va-wedding/DSC00560_1_t0cxpx.jpg",
-    name: "Luxury Place",
-    address: "171 Nguyễn Thái Sơn , P8, Quận Gò Vấp",
-    time: "10:45",
-    date: "Thứ Hai ",
-    day: "06",
-    month: "01",
-    year: "2025",
-  },
-};
+const groomTime = dayjs.unix(CountDownPlace.groom.timeStamp);
+const brideTime = dayjs.unix(CountDownPlace.bride.timeStamp);
 
 export function Countdown() {
   return (
@@ -49,7 +30,7 @@ export function Countdown() {
         <div
           className="count-down section-countdown img_bg bg_overlay"
           style={{
-            backgroundImage: `url(${imgs.backgroundCover})`,
+            backgroundImage: `url(${CountDownBackgroundCover})`,
           }}
         >
           <p className="text-base text-center mb-1 font-quickSand">
@@ -84,23 +65,33 @@ export function Countdown() {
           <div className="invitation-container grid md:flex md:justify-evenly">
             <div className="invitation-card">
               {" "}
-              <img src={place.groom.img} alt="" />
+              <img src={CountDownPlace.groom.img} alt="" />
               <h3 className={cn(noto.className, "text-2xl")}>
-                {place.groom.name}
+                {CountDownPlace.groom.name}
               </h3>
               <address>
-                <p>{place.groom.address}</p>
+                <p>{CountDownPlace.groom.address}</p>
               </address>
               <div className="invitation-body">
                 <div className="invi_time">
-                  <p className="font-bold">Vào lúc {place.groom.time}</p>
+                  <p className="font-bold">
+                    Vào lúc {groomTime.hour().toString().padStart(2, "0")}:
+                    {groomTime.minute().toString().padStart(2, "0")}
+                  </p>
                   <div className="invi_group_time">
-                    <span className="invi_date_text">{place.groom.date} </span>
-                    <span className={cn(noto.className, "invi_date_number")}>
-                      <p className="invi_date">{place.groom.day}</p> /
-                      <p className="invi_month">{place.groom.month}</p>
+                    <span className="invi_date_text">
+                      {weekdays[groomTime.day()]}
                     </span>
-                    <span className="invi_year_text">{place.groom.year} </span>
+                    <span className={cn(noto.className, "invi_date_number")}>
+                      <p className="invi_date">
+                        {(groomTime.day() + 1).toString().padStart(2, "0")}
+                      </p>
+                      /
+                      <p className="invi_month">
+                        {(groomTime.month() + 1).toString()}
+                      </p>
+                    </span>
+                    <span className="invi_year_text">{groomTime.year()}</span>
                   </div>
                   <p className="invi_amlich">Nhằm Ngày ....</p>
                 </div>
@@ -133,26 +124,35 @@ export function Countdown() {
             </div>
             <div className="invitation-card">
               {" "}
-              <img src={place.bride.img} alt="" />
+              <img src={CountDownPlace.bride.img} alt="" />
               <h3 className={cn(noto.className, "text-2xl")}>
-                {place.bride.name}
+                {CountDownPlace.bride.name}
               </h3>
               <address>
-                <p>{place.bride.address}</p>
+                <p>{CountDownPlace.bride.address}</p>
               </address>
               <div className="invitation-body">
-                {" "}
                 <div className="invi_time">
-                  <p className="fw-bold">Vào lúc {place.bride.time}</p>
+                  <p className="font-bold">
+                    Vào lúc {brideTime.hour().toString().padStart(2, "0")}:
+                    {brideTime.minute().toString().padStart(2, "0")}
+                  </p>
                   <div className="invi_group_time">
-                    <span className="invi_date_text">{place.bride.date} </span>
-                    <span className={cn(noto.className, "invi_date_number")}>
-                      <p className="invi_date">{place.bride.day}</p> /
-                      <p className="invi_month">{place.bride.month}</p>
+                    <span className="invi_date_text">
+                      {weekdays[brideTime.day()]}
                     </span>
-                    <span className="invi_year_text">{place.bride.year} </span>
+                    <span className={cn(noto.className, "invi_date_number")}>
+                      <p className="invi_date">
+                        {(brideTime.day() + 1).toString().padStart(2, "0")}
+                      </p>
+                      /
+                      <p className="invi_month">
+                        {(brideTime.month() + 1).toString()}
+                      </p>
+                    </span>
+                    <span className="invi_year_text">{brideTime.year()}</span>
                   </div>
-                  <p className="invi_amlich"></p>
+                  <p className="invi_amlich">Nhằm Ngày ....</p>
                 </div>
               </div>
               <div className="social-link">

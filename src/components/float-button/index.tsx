@@ -1,6 +1,7 @@
 import React from "react";
 import { Fancybox } from "../fancybox";
 import { RiGiftFill } from "react-icons/ri";
+import { BankImage } from "@/constants";
 
 export function FloatButton() {
   return (
@@ -14,7 +15,7 @@ export function FloatButton() {
             borderRadius: 9999,
           }}
           data-fancybox="gallery"
-          href="https://jejuwedding.net/wp-content/uploads/2024/01/z5188874786913_a20788673bb51c9f427e44d6717f12b5.jpg"
+          href={BankImage}
         >
           <RiGiftFill size={30} />
         </a>

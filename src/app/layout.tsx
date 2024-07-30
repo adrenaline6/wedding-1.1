@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import dayjs from "dayjs";
+require("dayjs/locale/vi");
+dayjs.locale("vi"); // switch back to default English locale globally
 
 export const metadata: Metadata = {
   title: "Viet Anh & Thu Trang . 2024",

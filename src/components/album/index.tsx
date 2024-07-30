@@ -1,39 +1,17 @@
 "use client";
 import { cn } from "@/utils"; // Import Swiper React components
+import { motion } from "framer-motion";
 import { Noto_Serif_Display } from "next/font/google";
-import { Swiper, SwiperProps, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperProps, SwiperSlide } from "swiper/react";
 import { Fancybox } from "../fancybox";
 import "./album.css";
-import { motion } from "framer-motion";
 
+import { AlbumImages } from "@/constants";
 import "swiper/css";
 const noto = Noto_Serif_Display({
   preload: false,
 });
-
-const images = [
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80663.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80001-1.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80231-1.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/26.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/17.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/16.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/19-1.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/9.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80452.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/11.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/8.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/5.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80862.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/4.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80307-1.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80901.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80878.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/24.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/22.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80252-1.jpg",
-];
 
 const swiperConfig: SwiperProps = {
   spaceBetween: 24,
@@ -90,7 +68,7 @@ export function Album() {
               },
             }}
           >
-            {images.map((item, index) => (
+            {AlbumImages.map((item, index) => (
               <SwiperSlide key={index}>
                 <motion.div
                   className="object-cover block w-full rounded-xl"
