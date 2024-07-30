@@ -9,3 +9,4 @@ export * from "./message";
 export * from "./review";
 export * from "./thank-you";
 export * from "./timeline";
+export * from "./video";

@@ -8,6 +8,7 @@ import {
   Message,
   ThankYou,
   Timeline,
+  Video,
 } from "@/components";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Countdown />
       <Timeline />
       <Album />
+      {/* <Video /> */}
       <Message />
       <Gift />
       <ThankYou />
