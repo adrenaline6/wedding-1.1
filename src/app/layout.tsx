@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Viet Anh & Thu Trang . 2024",
   description: "Viet Anh - Thu Trang Wedding",
 };
-
+export const runtime = "edge";
 export default function RootLayout({
   children,
 }: Readonly<{

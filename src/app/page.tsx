@@ -1,5 +1,6 @@
 import {
   About,
+  Album,
   Countdown,
   FloatButton,
   Gift,
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <Countdown />
       <Timeline />
+      <Album />
       <Message />
       <Gift />
       <ThankYou />

@@ -1,4 +1,5 @@
 export * from "./about";
+export * from "./album";
 export * from "./count-down";
 export * from "./fancybox";
 export * from "./float-button";
