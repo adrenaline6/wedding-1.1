@@ -6,6 +6,7 @@ export * from "./float-button";
 export * from "./gift";
 export * from "./header";
 export * from "./message";
+export * from "./music-player";
 export * from "./review";
 export * from "./thank-you";
 export * from "./timeline";

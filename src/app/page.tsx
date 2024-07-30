@@ -6,6 +6,7 @@ import {
   Gift,
   Header,
   Message,
+  MusicPlayer,
   ThankYou,
   Timeline,
   Video,
@@ -24,6 +25,7 @@ export default function Home() {
       <Gift />
       <ThankYou />
       <FloatButton />
+      <MusicPlayer />
     </main>
   );
 }

@@ -5,7 +5,7 @@ import { BankImage } from "@/constants";
 
 export function FloatButton() {
   return (
-    <div className="fixed right-6 bottom-6 z-[9999]">
+    <div className="fixed right-6 bottom-6 z-10">
       <Fancybox>
         <a
           className="btn btn-primary text-textWhite"

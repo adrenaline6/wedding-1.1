@@ -1,0 +1,7 @@
+.music-toggle {
+  width: 40px;
+  height: 40px;
+}
+.music-toggle svg {
+  min-width: 20px;
+}
