@@ -1,30 +1,23 @@
-import { cn, getDayJs, numberPad } from "@/utils";
-import { Noto_Serif_Display } from "next/font/google";
 import {
-  RiFacebookFill,
-  RiImageCircleFill,
-  RiMap2Fill,
-  RiPhoneFill,
-  RiTwitterXFill,
-} from "react-icons/ri";
+  AboutInfo,
+  CountDownBackgroundCover,
+  CountDownInfo,
+  weekdays,
+} from "@/constants";
+import { cn, getDayJs, numberPad } from "@/utils";
+import chineseLunar from "chinese-lunar";
+import { Noto_Serif_Display } from "next/font/google";
+import { RiMap2Fill, RiPhoneFill } from "react-icons/ri";
 import { Timer } from "../timer";
 import "./count-down.css";
-import {
-  CountDownPlace,
-  CountDownBackgroundCover,
-  weekdays,
-  AboutInfo,
-} from "@/constants";
-import dayjs from "dayjs";
 import { Heart } from "./heart";
-import chineseLunar from "chinese-lunar";
 
 const noto = Noto_Serif_Display({
   preload: false,
 });
 
-const groomTime = getDayJs(CountDownPlace.groom.timeStamp);
-const brideTime = getDayJs(CountDownPlace.bride.timeStamp);
+const groomTime = getDayJs(CountDownInfo.groom.timeStamp);
+const brideTime = getDayJs(CountDownInfo.bride.timeStamp);
 
 const groomLunar = chineseLunar.solarToLunar(groomTime.toDate());
 const brideLunar = chineseLunar.solarToLunar(brideTime.toDate());
@@ -55,12 +48,12 @@ export function Countdown() {
           <div className="invitation-container grid md:flex md:justify-evenly">
             <div className="invitation-card">
               {" "}
-              <img src={CountDownPlace.groom.img} alt="" />
+              <img src={CountDownInfo.groom.img} alt="" />
               <h3 className={cn(noto.className, "text-2xl")}>
-                {CountDownPlace.groom.name}
+                {CountDownInfo.groom.name}
               </h3>
               <address>
-                <p>{CountDownPlace.groom.address}</p>
+                <p>{CountDownInfo.groom.address}</p>
               </address>
               <div className="invitation-body">
                 <div className="invi_time">
@@ -106,7 +99,7 @@ export function Countdown() {
 
                 {AboutInfo.groom.social.tel ? (
                   <a
-                    href={CountDownPlace.groom.maps}
+                    href={CountDownInfo.groom.maps}
                     target="_blank"
                     className="invi_map"
                   >
@@ -116,12 +109,12 @@ export function Countdown() {
               </div>
             </div>
             <div className="invitation-card">
-              <img src={CountDownPlace.bride.img} alt="" />
+              <img src={CountDownInfo.bride.img} alt="" />
               <h3 className={cn(noto.className, "text-2xl")}>
-                {CountDownPlace.bride.name}
+                {CountDownInfo.bride.name}
               </h3>
               <address>
-                <p>{CountDownPlace.bride.address}</p>
+                <p>{CountDownInfo.bride.address}</p>
               </address>
               <div className="invitation-body">
                 <div className="invi_time">
@@ -167,7 +160,7 @@ export function Countdown() {
 
                 {AboutInfo.bride.social.tel ? (
                   <a
-                    href={CountDownPlace.bride.maps}
+                    href={CountDownInfo.bride.maps}
                     target="_blank"
                     className="invi_map"
                   >

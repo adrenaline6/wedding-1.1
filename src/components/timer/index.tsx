@@ -1,6 +1,6 @@
 "use client";
-import { WeddingDate } from "@/constants";
-import { cn } from "@/utils";
+import { CountDownInfo } from "@/constants";
+import { cn, getDayJs } from "@/utils";
 import dayjs from "dayjs";
 import { Noto_Serif_Display } from "next/font/google";
 import { useEffect, useState } from "react";
@@ -12,7 +12,7 @@ const noto = Noto_Serif_Display({
   preload: false,
 });
 
-const weddingDay = dayjs(WeddingDate, "YYYY-MM-DD HH:mm:ss");
+const weddingDay = getDayJs(CountDownInfo.groom.timeStamp);
 
 export function Timer() {
   const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining());
@@ -40,6 +40,7 @@ export function Timer() {
     }
 
     const duration = dayjs.duration(diff);
+
     return {
       isPast: false,
       days: Math.floor(duration.asDays()),

@@ -1,10 +1,9 @@
+import { AboutInfo, CountDownInfo, weekdays } from "@/constants";
 import { cn, getDayJs, numberPad } from "@/utils";
 import { Noto_Serif_Display } from "next/font/google";
 import { RiGift2Fill, RiMap2Line, RiPhoneFill } from "react-icons/ri";
 import { BackgroundCover } from "./BackgroundCover";
 import "./header.css";
-import { AboutInfo, CountDownPlace, weekdays } from "@/constants";
-import dayjs from "dayjs";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -53,7 +52,7 @@ const Name = () => {
   );
 };
 
-const date = getDayJs(CountDownPlace.groom.timeStamp);
+const date = getDayJs(CountDownInfo.groom.timeStamp);
 
 const Date = () => {
   return (
@@ -81,9 +80,9 @@ const Date = () => {
         <p className="font-windSong text-base font-light">
           Hôn lễ được tổ chức tại
         </p>
-        <span className="text-xl">{CountDownPlace.groom.name}</span>
+        <span className="text-xl">{CountDownInfo.groom.name}</span>
         <span className="font-light text-base">
-          {CountDownPlace.groom.address}
+          {CountDownInfo.groom.address}
         </span>
       </div>
     </div>
@@ -98,7 +97,7 @@ const SocialLink = () => {
       <a href="#gift">
         <RiGift2Fill className="hover:text-primaryColor" />
       </a>
-      <a href={CountDownPlace.groom.maps} target="_blank">
+      <a href={CountDownInfo.groom.maps} target="_blank">
         <RiMap2Line className="hover:text-primaryColor" />
       </a>
     </div>
