@@ -1,4 +1,4 @@
-import { cn } from "@/utils";
+import { cn, numberPad } from "@/utils";
 import { Noto_Serif_Display } from "next/font/google";
 import {
   RiFacebookFill,
@@ -13,9 +13,11 @@ import {
   CountDownPlace,
   CountDownBackgroundCover,
   weekdays,
+  AboutInfo,
 } from "@/constants";
 import dayjs from "dayjs";
 import { Heart } from "./heart";
+import chineseLunar from "chinese-lunar";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -23,6 +25,9 @@ const noto = Noto_Serif_Display({
 
 const groomTime = dayjs.unix(CountDownPlace.groom.timeStamp);
 const brideTime = dayjs.unix(CountDownPlace.bride.timeStamp);
+
+const groomLunar = chineseLunar.solarToLunar(groomTime.toDate());
+const brideLunar = chineseLunar.solarToLunar(brideTime.toDate());
 
 export function Countdown() {
   return (
@@ -60,55 +65,57 @@ export function Countdown() {
               <div className="invitation-body">
                 <div className="invi_time">
                   <p className="font-bold">
-                    Vào lúc {groomTime.hour().toString().padStart(2, "0")}:
-                    {groomTime.minute().toString().padStart(2, "0")}
+                    Vào lúc {numberPad(groomTime.hour())}:
+                    {numberPad(groomTime.minute())}
                   </p>
                   <div className="invi_group_time">
                     <span className="invi_date_text">
                       {weekdays[groomTime.day()]}
                     </span>
                     <span className={cn(noto.className, "invi_date_number")}>
-                      <p className="invi_date">
-                        {(groomTime.day() + 1).toString().padStart(2, "0")}
-                      </p>
+                      <p className="invi_date">{numberPad(groomTime.date())}</p>
                       /
                       <p className="invi_month">
-                        {(groomTime.month() + 1).toString()}
+                        {numberPad(groomTime.month() + 1)}
                       </p>
                     </span>
                     <span className="invi_year_text">{groomTime.year()}</span>
                   </div>
-                  <p className="invi_amlich">Nhằm Ngày ....</p>
+                  <p className="invi_amlich">
+                    Nhằm Ngày {groomLunar.day - 1}/{groomLunar.month}
+                  </p>
                 </div>
               </div>
               <div className="social-link">
-                <a href="tel:(+84)" className="phone_number">
-                  <RiPhoneFill />
-                </a>
-                <a
+                {AboutInfo.groom.social.tel ? (
+                  <a
+                    href={`tel:${AboutInfo.groom.social.tel}`}
+                    className="phone_number"
+                  >
+                    <RiPhoneFill />
+                  </a>
+                ) : undefined}
+                {/* <a
                   href="https://jejuwedding.net/wp-content/uploads/2024/01/thiep.png"
                   className="phone_number"
                   data-fancybox=""
                 >
                   <i className="ri-image-circle-fill"></i>
                   <RiImageCircleFill />
-                </a>
+                </a> */}
 
-                <a href="" className="invi_map" target="_blank">
-                  <RiFacebookFill />
-                </a>
-
-                <a href="" className="invi_map" target="_blank">
-                  <RiTwitterXFill />
-                </a>
-
-                <a href="" className="invi_map" target="_blank">
-                  <RiMap2Fill />
-                </a>
+                {AboutInfo.groom.social.tel ? (
+                  <a
+                    href={CountDownPlace.groom.maps}
+                    target="_blank"
+                    className="invi_map"
+                  >
+                    <RiMap2Fill />
+                  </a>
+                ) : undefined}
               </div>
             </div>
             <div className="invitation-card">
-              {" "}
               <img src={CountDownPlace.bride.img} alt="" />
               <h3 className={cn(noto.className, "text-2xl")}>
                 {CountDownPlace.bride.name}
@@ -119,51 +126,54 @@ export function Countdown() {
               <div className="invitation-body">
                 <div className="invi_time">
                   <p className="font-bold">
-                    Vào lúc {brideTime.hour().toString().padStart(2, "0")}:
-                    {brideTime.minute().toString().padStart(2, "0")}
+                    Vào lúc {numberPad(brideTime.hour())}:
+                    {numberPad(brideTime.minute())}
                   </p>
                   <div className="invi_group_time">
                     <span className="invi_date_text">
                       {weekdays[brideTime.day()]}
                     </span>
                     <span className={cn(noto.className, "invi_date_number")}>
-                      <p className="invi_date">
-                        {(brideTime.day() + 1).toString().padStart(2, "0")}
-                      </p>
+                      <p className="invi_date">{numberPad(brideTime.date())}</p>
                       /
                       <p className="invi_month">
-                        {(brideTime.month() + 1).toString()}
+                        {numberPad(brideTime.month() + 1)}
                       </p>
                     </span>
                     <span className="invi_year_text">{brideTime.year()}</span>
                   </div>
-                  <p className="invi_amlich">Nhằm Ngày ....</p>
+                  <p className="invi_amlich">
+                    Nhằm Ngày {brideLunar.day - 1}/{brideLunar.month}
+                  </p>
                 </div>
               </div>
               <div className="social-link">
-                <a href="tel:(+84)" className="phone_number">
-                  <RiPhoneFill />
-                </a>
-                <a
+                {AboutInfo.bride.social.tel ? (
+                  <a
+                    href={`tel:${AboutInfo.bride.social.tel}`}
+                    className="phone_number"
+                  >
+                    <RiPhoneFill />
+                  </a>
+                ) : undefined}
+                {/* <a
                   href="https://jejuwedding.net/wp-content/uploads/2024/01/thiep.png"
                   className="phone_number"
                   data-fancybox=""
                 >
                   <i className="ri-image-circle-fill"></i>
                   <RiImageCircleFill />
-                </a>
+                </a> */}
 
-                <a href="" className="invi_map" target="_blank">
-                  <RiFacebookFill />
-                </a>
-
-                <a href="" className="invi_map" target="_blank">
-                  <RiTwitterXFill />
-                </a>
-
-                <a href="" className="invi_map" target="_blank">
-                  <RiMap2Fill />
-                </a>
+                {AboutInfo.bride.social.tel ? (
+                  <a
+                    href={CountDownPlace.bride.maps}
+                    target="_blank"
+                    className="invi_map"
+                  >
+                    <RiMap2Fill />
+                  </a>
+                ) : undefined}
               </div>
             </div>
           </div>

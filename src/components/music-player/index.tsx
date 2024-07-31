@@ -4,23 +4,28 @@ import { RiMusicFill, RiVolumeMuteFill, RiVolumeUpFill } from "react-icons/ri";
 import "./music-player.css";
 
 export function MusicPlayer() {
-  const [pause, setPause] = useState(false);
+  const [pause, setPause] = useState(true);
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    document
-      .getElementById("audio")
-      ?.play?.()
-      ?.catch((error) => {
-        setTimeout(() => {
-          document.addEventListener(
-            "click",
-            () => {
-              document.getElementById("audio")?.play();
-            },
-            { once: true }
-          );
-        }, 100);
-      });
+    const handleInteraction = () => {
+      if (audioRef.current) {
+        audioRef.current.play().catch((error) => {
+          console.error("Failed to play audio:", error);
+        });
+      }
+      document.removeEventListener("click", handleInteraction);
+      document.removeEventListener("touchstart", handleInteraction);
+    };
+
+    document.addEventListener("click", handleInteraction);
+    document.addEventListener("touchstart", handleInteraction);
+
+    return () => {
+      document.removeEventListener("click", handleInteraction);
+      document.removeEventListener("touchstart", handleInteraction);
+    };
   }, []);
 
   const onToggleMute = () => {
@@ -42,6 +47,7 @@ export function MusicPlayer() {
         }}
         data-fancybox="gallery"
         onClick={onToggleMute}
+        ref={buttonRef}
       >
         {pause ? (
           <RiVolumeMuteFill size={16} className="min-w-[30px]" />
@@ -50,6 +56,7 @@ export function MusicPlayer() {
         )}
       </button>
       <audio
+        ref={audioRef}
         id="audio"
         autoPlay={true}
         // controls

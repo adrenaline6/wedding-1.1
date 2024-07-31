@@ -1,4 +1,4 @@
-import { cn } from "@/utils";
+import { cn, numberPad } from "@/utils";
 import { Noto_Serif_Display } from "next/font/google";
 import { RiGift2Fill, RiMap2Line, RiPhoneFill } from "react-icons/ri";
 import { BackgroundCover } from "./BackgroundCover";
@@ -69,14 +69,13 @@ const Date = () => {
           {weekdays[date.day()]}
         </span>
         <span className="font-bold text-[64px] text-center">
-          {(date.day() + 1).toString().padStart(2, "0")}
+          {numberPad(date.date())}
         </span>
         <span className="border-y-[1px] border-solid border-white p-1 text-center">
-          {date.hour().toString().padStart(2, "0")}:
-          {date.minute().toString().padStart(2, "0")}
+          {numberPad(date.hour())}:{numberPad(date.minute())}
         </span>
       </div>
-      <span>Tháng {date.month() + 1}</span>
+      <span>Tháng {numberPad(date.month() + 1)}</span>
       {". "}
       <span>{date.year()}</span>
       <div className="group-add">
@@ -94,16 +93,13 @@ const Date = () => {
 const SocialLink = () => {
   return (
     <div className="social-link">
-      <a href="tel:+84983460172">
+      <a href={`tel:${AboutInfo.groom.social.tel}`}>
         <RiPhoneFill className="hover:text-primaryColor" />
       </a>
       <a href="#gift">
         <RiGift2Fill className="hover:text-primaryColor" />
       </a>
-      <a
-        href="https://www.google.com/maps/place/11%C2%B051'41.9%22N+108%C2%B013'07.0%22E/@11.8616389,108.2186111,17z/data=!3m1!4b1!4m4!3m3!8m2!3d11.8616389!4d108.2186111?entry=ttu"
-        target="_blank"
-      >
+      <a href={CountDownPlace.groom.maps} target="_blank">
         <RiMap2Line className="hover:text-primaryColor" />
       </a>
     </div>

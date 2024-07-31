@@ -21,7 +21,7 @@ export default function Home() {
       <Timeline />
       <Album />
       {/* <Video /> */}
-      <Message />
+      {/* <Message /> */}
       <Gift />
       <ThankYou />
       <FloatButton />

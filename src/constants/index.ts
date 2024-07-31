@@ -13,7 +13,7 @@ export const AboutInfo = {
     dob: "04/03/1998",
     desc: " Khác với chú rể, cô dâu thuộc tuýp người hướng nội, đi du học tại Thanh Xuân nên không có nhiều bạn bè.",
     social: {
-      tel: "+84902618766",
+      tel: "(+84)",
       fb: "https://www.facebook.com/jan4398",
       insta: "https://www.instagram.com/jan4398/",
     },
@@ -42,13 +42,15 @@ export const CountDownPlace = {
     img: "https://res.cloudinary.com/dl764aic5/image/upload/v1722235753/va-wedding/DSC01802_1_1_bc28ot.jpg",
     name: "Nhà hàng Thu Hằng",
     address: "163 Đ. Cầu Diễn, Phúc Diễn, Bắc Từ Liêm, Hà Nội",
-    timeStamp: 1725245100,
+    timeStamp: 1725243300,
+    maps: "https://www.google.com/maps/place/Nh%C3%A0+H%C3%A0ng+Thu+H%E1%BA%B1ng/@21.0453957,105.750118,19.42z/data=!4m12!1m5!3m4!2zMTHCsDUxJzQxLjkiTiAxMDjCsDEzJzA3LjAiRQ!8m2!3d11.8616389!4d108.2186111!3m5!1s0x31345574662b4763:0x98f9afaced991f68!8m2!3d21.0457268!4d105.7499161!16s%2Fg%2F11h5_v00yy?entry=ttu",
   },
   bride: {
     img: "https://res.cloudinary.com/dl764aic5/image/upload/v1722235847/va-wedding/DSC00560_1_t0cxpx.jpg",
     name: "edit place name",
     address: "edit place",
-    timeStamp: 1722309940,
+    timeStamp: 1733105700,
+    maps: "https://www.google.com/maps/place/Nh%C3%A0+H%C3%A0ng+Thu+H%E1%BA%B1ng/@21.0453957,105.750118,19.42z/data=!4m12!1m5!3m4!2zMTHCsDUxJzQxLjkiTiAxMDjCsDEzJzA3LjAiRQ!8m2!3d11.8616389!4d108.2186111!3m5!1s0x31345574662b4763:0x98f9afaced991f68!8m2!3d21.0457268!4d105.7499161!16s%2Fg%2F11h5_v00yy?entry=ttu",
   },
 };
 
