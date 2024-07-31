@@ -1,4 +1,4 @@
-import { cn, numberPad } from "@/utils";
+import { cn, getDayJs, numberPad } from "@/utils";
 import { Noto_Serif_Display } from "next/font/google";
 import { RiGift2Fill, RiMap2Line, RiPhoneFill } from "react-icons/ri";
 import { BackgroundCover } from "./BackgroundCover";
@@ -53,8 +53,7 @@ const Name = () => {
   );
 };
 
-const time = CountDownPlace.groom.timeStamp;
-const date = dayjs.unix(time);
+const date = getDayJs(CountDownPlace.groom.timeStamp);
 
 const Date = () => {
   return (

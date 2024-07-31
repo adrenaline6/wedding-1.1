@@ -1,4 +1,4 @@
-import { cn, numberPad } from "@/utils";
+import { cn, getDayJs, numberPad } from "@/utils";
 import { Noto_Serif_Display } from "next/font/google";
 import {
   RiFacebookFill,
@@ -23,8 +23,8 @@ const noto = Noto_Serif_Display({
   preload: false,
 });
 
-const groomTime = dayjs.unix(CountDownPlace.groom.timeStamp);
-const brideTime = dayjs.unix(CountDownPlace.bride.timeStamp);
+const groomTime = getDayJs(CountDownPlace.groom.timeStamp);
+const brideTime = getDayJs(CountDownPlace.bride.timeStamp);
 
 const groomLunar = chineseLunar.solarToLunar(groomTime.toDate());
 const brideLunar = chineseLunar.solarToLunar(brideTime.toDate());
