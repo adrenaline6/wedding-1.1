@@ -2,7 +2,7 @@ import { TimeLineItem } from "@/model";
 
 //gift
 export const BankImage =
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1722309779/va-wedding/photo_2024-07-30_10-20-57_zb4mdw.jpg";
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1722938083/va-wedding/IMG_1003_2_m3gma1.jpg";
 
 //about
 export const AboutInfo = {
