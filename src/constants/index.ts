@@ -41,40 +41,42 @@ export const CountDownInfo = {
     img: "https://res.cloudinary.com/dl764aic5/image/upload/v1722235753/va-wedding/DSC01802_1_1_bc28ot.jpg",
     name: "Nhà hàng Thu Hằng",
     address: "163 Đ. Cầu Diễn, Phúc Diễn, Bắc Từ Liêm, Hà Nội",
-    timeStamp: 1725243300,
+    timeStamp: 1725416100, // -> https://www.epochconverter.com/ local time
     maps: "https://www.google.com/maps/place/Nh%C3%A0+H%C3%A0ng+Thu+H%E1%BA%B1ng/@21.0453957,105.750118,19.42z/data=!4m12!1m5!3m4!2zMTHCsDUxJzQxLjkiTiAxMDjCsDEzJzA3LjAiRQ!8m2!3d11.8616389!4d108.2186111!3m5!1s0x31345574662b4763:0x98f9afaced991f68!8m2!3d21.0457268!4d105.7499161!16s%2Fg%2F11h5_v00yy?entry=ttu",
   },
   bride: {
     img: "https://res.cloudinary.com/dl764aic5/image/upload/v1722235847/va-wedding/DSC00560_1_t0cxpx.jpg",
-    name: "edit place name",
-    address: "edit place",
-    timeStamp: 1725243300,
+    name: "<Chưa có tên>",
+    address: "<Chưa có tên>",
+    timeStamp: 1725416100,
     maps: "https://www.google.com/maps/place/Nh%C3%A0+H%C3%A0ng+Thu+H%E1%BA%B1ng/@21.0453957,105.750118,19.42z/data=!4m12!1m5!3m4!2zMTHCsDUxJzQxLjkiTiAxMDjCsDEzJzA3LjAiRQ!8m2!3d11.8616389!4d108.2186111!3m5!1s0x31345574662b4763:0x98f9afaced991f68!8m2!3d21.0457268!4d105.7499161!16s%2Fg%2F11h5_v00yy?entry=ttu",
   },
 };
 
 //timeline
+export const TimeLineBackground =
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723106156/va-wedding/29_wkogdj.jpg";
 export const TimeLine: TimeLineItem[] = [
   {
-    img: "https://jejuwedding.net/wp-content/uploads/2024/01/4.jpg",
+    img: "https://res.cloudinary.com/dl764aic5/image/upload/v1723105197/va-wedding/3_qnoe6r.jpg",
     date: "20.03.2020",
     title: "Lần đầu gặp gỡ",
     desc: "Ngày ấy vu vơ đăng một dòng status trên facebook than thở, vu vơ đùa giỡn nói chuyện với một người xa lạ chưa từng quen.",
   },
   {
-    img: "https://jejuwedding.net/wp-content/uploads/2024/01/27.80452.jpg",
+    img: "https://res.cloudinary.com/dl764aic5/image/upload/v1723105197/va-wedding/4_cy5gqc.jpg",
     date: "04.05.2023",
     title: "Hẹn hò",
     desc: "Mỗi chiều cuối tuần thường chạy xe vòng quanh qua những con phố, len lỏi trong từng dòng người tấp nập",
   },
   {
-    img: "https://jejuwedding.net/wp-content/uploads/2024/01/26.jpg",
+    img: "https://res.cloudinary.com/dl764aic5/image/upload/v1723105440/va-wedding/33_mr5dtm.jpg",
     date: "24.08.2023",
     title: "Lễ đính hôn",
     desc: "Chúng ta từ 2 con người xa lạ mà bước vào cuộc đời nhau. Và giờ đây chúng ta tiếp tục cùng nhau sang trang mới.",
   },
   {
-    img: "https://jejuwedding.net/wp-content/uploads/2024/01/4.jpg",
+    img: "https://res.cloudinary.com/dl764aic5/image/upload/v1723105414/va-wedding/23_tpgppe.jpg",
     date: "06.01.2024",
     title: "Lễ thành hôn",
     desc: "Em và anh không chỉ là người yêu mà chúng ta còn là tri kỷ. Ngày hôm nay, em sẽ là cô dâu của anh",
@@ -83,26 +85,30 @@ export const TimeLine: TimeLineItem[] = [
 
 //album
 export const AlbumImages = [
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80663.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80001-1.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80231-1.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/26.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/17.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/16.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/19-1.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/9.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80452.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/11.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/8.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/5.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80862.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/4.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80307-1.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80901.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80878.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/24.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/22.jpg",
-  "https://jejuwedding.net/wp-content/uploads/2024/01/27.80252-1.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105197/va-wedding/2_xmzbre.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105197/va-wedding/4_cy5gqc.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105197/va-wedding/3_qnoe6r.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105210/va-wedding/7_vydbfa.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105211/va-wedding/6_lwrljh.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105211/va-wedding/8_mzejad.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105231/va-wedding/16_chiyt5.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105231/va-wedding/12_jm3n2s.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105232/va-wedding/11_aqobxj.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105232/va-wedding/18_hv4yp1.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105233/va-wedding/14_flzfdy.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105416/va-wedding/19_oxa9tw.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105415/va-wedding/25_berf9d.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105414/va-wedding/23_tpgppe.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105414/va-wedding/22_irjvke.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105415/va-wedding/21_vw2stf.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105440/va-wedding/33_mr5dtm.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105440/va-wedding/32_lr4krx.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105441/va-wedding/31_xdyose.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105573/va-wedding/36_vlqqdp.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105571/va-wedding/38_ueywad.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105571/va-wedding/37_easaqz.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723106156/va-wedding/29_wkogdj.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723106156/va-wedding/28_eypjjm.jpg",
 ];
 
 //common

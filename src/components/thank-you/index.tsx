@@ -53,13 +53,13 @@ export function ThankYou() {
             <a href="#" className="instargram">
               <RiInstagramFill />
             </a>
-            <a href="#" className="twiter">
+            {/* <a href="#" className="twiter">
               <i className="ri-twitter-x-line"></i>
               <RiTwitterXFill />
             </a>
             <a href="#" className="pinterest">
               <RiPinterestFill />
-            </a>
+            </a> */}
           </div>
         </div>
       </Review>

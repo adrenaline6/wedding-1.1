@@ -1,4 +1,4 @@
-import { TimeLine } from "@/constants";
+import { TimeLine, TimeLineBackground } from "@/constants";
 import { TimeLineItem } from "@/model";
 import { cn } from "@/utils";
 import { Noto_Serif_Display } from "next/font/google";
@@ -19,8 +19,7 @@ export function Timeline() {
       id="time-line"
       className="time-line-section img_bg bg_overlay"
       style={{
-        backgroundImage:
-          "url(https://jejuwedding.net/wp-content/uploads/2024/01/24.jpg)",
+        backgroundImage: `url(${TimeLineBackground})`,
       }}
     >
       <div className="time-line container">

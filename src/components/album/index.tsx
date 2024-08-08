@@ -68,22 +68,24 @@ export function Album() {
               },
             }}
           >
-            {AlbumImages.map((item, index) => (
-              <SwiperSlide key={index}>
-                <motion.div
-                  className="object-cover block w-full rounded-xl"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <a href={item} data-fancybox="gallery">
-                    <img src={item} className="album-img" />
-                  </a>
-                  <div className="swiper-slide-shadow-left swiper-slide-shadow-coverflow"></div>
-                  <div className="swiper-slide-shadow-right swiper-slide-shadow-coverflow"></div>
-                </motion.div>
-              </SwiperSlide>
-            ))}
+            {AlbumImages.sort((a, b) => 0.5 - Math.random()).map(
+              (item, index) => (
+                <SwiperSlide key={index}>
+                  <motion.div
+                    className="object-cover block w-full rounded-xl"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <a href={item} data-fancybox="gallery">
+                      <img src={item} className="album-img" />
+                    </a>
+                    <div className="swiper-slide-shadow-left swiper-slide-shadow-coverflow"></div>
+                    <div className="swiper-slide-shadow-right swiper-slide-shadow-coverflow"></div>
+                  </motion.div>
+                </SwiperSlide>
+              )
+            )}
           </Swiper>
         </div>
       </Fancybox>
