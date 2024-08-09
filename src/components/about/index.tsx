@@ -4,6 +4,7 @@ import { Noto_Serif_Display } from "next/font/google";
 import { RiFacebookFill, RiInstagramFill, RiPhoneFill } from "react-icons/ri";
 import { Review } from "../review";
 import "./about.css";
+import Image from "next/image";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -33,10 +34,12 @@ export function About() {
             }}
           >
             <div className="about-media">
-              <img
+              <Image
                 src={AboutInfo.bride.image}
                 alt={AboutInfo.bride.name}
                 className="bride_img"
+                width={500}
+                height={500}
               />
             </div>
             <Review className="about-body aos-init" once={false}>
@@ -61,10 +64,12 @@ export function About() {
           </div>
           <div className="about-card" style={{ order: 1 }}>
             <div className="about-media">
-              <img
+              <Image
                 src={AboutInfo.groom.image}
                 alt={AboutInfo.groom.name}
                 className="groom_img"
+                width={500}
+                height={500}
               />
             </div>
             <Review className="about-body aos-init" once={false}>

@@ -4,6 +4,7 @@ import { cn } from "@/utils";
 import { Noto_Serif_Display } from "next/font/google";
 import { Review } from "../review";
 import "./timeline.css";
+import Image from "next/image";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -63,7 +64,13 @@ const TimelineItem = (props: TimelineItemProps) => {
             order: (index ?? 0) % 2 === 0 ? 0 : 1,
           }}
         >
-          <img src={img} alt={title} className="timline-img" />
+          <Image
+            src={img}
+            alt={title}
+            className="timline-img"
+            width={500}
+            height={500}
+          />
         </div>
         <div className="timeline-body">
           <span className={cn(noto.className, "story-date")}>{date}</span>

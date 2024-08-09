@@ -9,6 +9,7 @@ import "./album.css";
 
 import { AlbumImages } from "@/constants";
 import "swiper/css";
+import Image from "next/image";
 const noto = Noto_Serif_Display({
   preload: false,
 });
@@ -78,7 +79,13 @@ export function Album() {
                     transition={{ duration: 0.5 }}
                   >
                     <a href={item} data-fancybox="gallery">
-                      <img src={item} className="album-img" />
+                      <Image
+                        src={item}
+                        className="album-img"
+                        alt=""
+                        width={500}
+                        height={500}
+                      />
                     </a>
                     <div className="swiper-slide-shadow-left swiper-slide-shadow-coverflow"></div>
                     <div className="swiper-slide-shadow-right swiper-slide-shadow-coverflow"></div>

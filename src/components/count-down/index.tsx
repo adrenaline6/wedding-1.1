@@ -11,6 +11,7 @@ import { RiMap2Fill, RiPhoneFill } from "react-icons/ri";
 import { Timer } from "../timer";
 import "./count-down.css";
 import { Heart } from "./heart";
+import Image from "next/image";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -47,8 +48,12 @@ export function Countdown() {
         <div className="bg-background">
           <div className="invitation-container grid md:flex md:justify-evenly">
             <div className="invitation-card">
-              {" "}
-              <img src={CountDownInfo.groom.img} alt="" />
+              <Image
+                src={CountDownInfo.groom.img}
+                alt={CountDownInfo.groom.name}
+                width={500}
+                height={500}
+              />
               <h3 className={cn(noto.className, "text-2xl")}>
                 {CountDownInfo.groom.name}
               </h3>
@@ -108,8 +113,10 @@ export function Countdown() {
                 ) : undefined}
               </div>
             </div>
-            <div className="invitation-card">
-              <img src={CountDownInfo.bride.img} alt="" />
+            {/* <div className="invitation-card">
+              <Image src={CountDownInfo.bride.img} alt="" 
+                width={500}
+                height={500}/>
               <h3 className={cn(noto.className, "text-2xl")}>
                 {CountDownInfo.bride.name}
               </h3>
@@ -149,14 +156,6 @@ export function Countdown() {
                     <RiPhoneFill />
                   </a>
                 ) : undefined}
-                {/* <a
-                  href="https://jejuwedding.net/wp-content/uploads/2024/01/thiep.png"
-                  className="phone_number"
-                  data-fancybox=""
-                >
-                  <i className="ri-image-circle-fill"></i>
-                  <RiImageCircleFill />
-                </a> */}
 
                 {AboutInfo.bride.social.tel ? (
                   <a
@@ -168,7 +167,7 @@ export function Countdown() {
                   </a>
                 ) : undefined}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -9,6 +9,7 @@ import {
   RiTwitterXFill,
 } from "react-icons/ri";
 import { Review } from "../review";
+import Image from "next/image";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -17,13 +18,15 @@ const noto = Noto_Serif_Display({
 export function ThankYou() {
   return (
     <section id="thankyou" className="section-thankyou bg_overlay">
-      <img
+      <Image
         src="https://res.cloudinary.com/dl764aic5/image/upload/v1722167432/va-wedding/end_r9fgxh.jpg"
         alt=""
         className="thankyou-bg thankyou_img"
         style={{
           objectPosition: "center center",
         }}
+        width={1400}
+        height={1000}
       />
       <Review className="thankyou-body container">
         <h2

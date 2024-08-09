@@ -38,14 +38,14 @@ export const CountDownBackgroundCover =
 
 export const CountDownInfo = {
   groom: {
-    img: "https://res.cloudinary.com/dl764aic5/image/upload/v1722235753/va-wedding/DSC01802_1_1_bc28ot.jpg",
-    name: "Nhà hàng Thu Hằng",
-    address: "163 Đ. Cầu Diễn, Phúc Diễn, Bắc Từ Liêm, Hà Nội",
+    img: "https://res.cloudinary.com/dl764aic5/image/upload/v1722235847/va-wedding/DSC00560_1_t0cxpx.jpg",
+    name: "CTM Palace",
+    address: "131 Đ. Nguyễn Phong Sắc, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
     timeStamp: 1725416100, // -> https://www.epochconverter.com/ local time
-    maps: "https://www.google.com/maps/place/Nh%C3%A0+H%C3%A0ng+Thu+H%E1%BA%B1ng/@21.0453957,105.750118,19.42z/data=!4m12!1m5!3m4!2zMTHCsDUxJzQxLjkiTiAxMDjCsDEzJzA3LjAiRQ!8m2!3d11.8616389!4d108.2186111!3m5!1s0x31345574662b4763:0x98f9afaced991f68!8m2!3d21.0457268!4d105.7499161!16s%2Fg%2F11h5_v00yy?entry=ttu",
+    maps: "https://www.google.com/maps/place/CTM+Palace/@21.0410487,105.7866997,16.21z/data=!4m15!1m8!3m7!1s0x3135ab36e4c75e9b:0x28a5c02059036401!2zMTMxIMSQLiBOZ3V54buFbiBQaG9uZyBT4bqvYywgROG7i2NoIFbhu41uZyBI4bqtdSwgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWksIFZpZXRuYW0!3b1!8m2!3d21.0424974!4d105.789969!16s%2Fg%2F11gd3bv9s7!3m5!1s0x3135ab313282ca37:0x93c5760e067d47f4!8m2!3d21.0424279!4d105.7898832!16s%2Fg%2F11cs5n5yjs?entry=ttu",
   },
   bride: {
-    img: "https://res.cloudinary.com/dl764aic5/image/upload/v1722235847/va-wedding/DSC00560_1_t0cxpx.jpg",
+    img: "https://res.cloudinary.com/dl764aic5/image/upload/v1722235753/va-wedding/DSC01802_1_1_bc28ot.jpg",
     name: "<Chưa có tên>",
     address: "<Chưa có tên>",
     timeStamp: 1725416100,
