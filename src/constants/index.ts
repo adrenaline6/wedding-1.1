@@ -41,7 +41,7 @@ export const CountDownInfo = {
     img: "https://res.cloudinary.com/dl764aic5/image/upload/v1722235847/va-wedding/DSC00560_1_t0cxpx.jpg",
     name: "CTM Palace",
     address: "131 Đ. Nguyễn Phong Sắc, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
-    timeStamp: 1725416100, // -> https://www.epochconverter.com/ local time
+    timeStamp: 1725418800, // -> https://www.epochconverter.com/ local time
     maps: "https://www.google.com/maps/place/CTM+Palace/@21.0410487,105.7866997,16.21z/data=!4m15!1m8!3m7!1s0x3135ab36e4c75e9b:0x28a5c02059036401!2zMTMxIMSQLiBOZ3V54buFbiBQaG9uZyBT4bqvYywgROG7i2NoIFbhu41uZyBI4bqtdSwgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWksIFZpZXRuYW0!3b1!8m2!3d21.0424974!4d105.789969!16s%2Fg%2F11gd3bv9s7!3m5!1s0x3135ab313282ca37:0x93c5760e067d47f4!8m2!3d21.0424279!4d105.7898832!16s%2Fg%2F11cs5n5yjs?entry=ttu",
   },
   bride: {
@@ -59,7 +59,7 @@ export const TimeLineBackground =
 export const TimeLine: TimeLineItem[] = [
   {
     img: "https://res.cloudinary.com/dl764aic5/image/upload/v1723105197/va-wedding/3_qnoe6r.jpg",
-    date: "20.03.2020",
+    date: "20.03.2022",
     title: "Lần đầu gặp gỡ",
     desc: "Ngày ấy vu vơ đăng một dòng status trên facebook than thở, vu vơ đùa giỡn nói chuyện với một người xa lạ chưa từng quen.",
   },
@@ -77,7 +77,7 @@ export const TimeLine: TimeLineItem[] = [
   },
   {
     img: "https://res.cloudinary.com/dl764aic5/image/upload/v1723105414/va-wedding/23_tpgppe.jpg",
-    date: "06.01.2024",
+    date: "04.09.2024",
     title: "Lễ thành hôn",
     desc: "Em và anh không chỉ là người yêu mà chúng ta còn là tri kỷ. Ngày hôm nay, em sẽ là cô dâu của anh",
   },
