@@ -80,7 +80,7 @@ export function Countdown() {
                     <span className="invi_year_text">{groomTime.year()}</span>
                   </div>
                   <p className="invi_amlich">
-                    Nhằm Ngày {groomLunar.day - 1}/{groomLunar.month}
+                    Tức Ngày {groomLunar.day - 1}/{groomLunar.month} Năm Giáp Thìn
                   </p>
                 </div>
               </div>

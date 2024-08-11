@@ -11,9 +11,8 @@ export const AboutInfo = {
       "https://res.cloudinary.com/dl764aic5/image/upload/v1722167263/va-wedding/bride_pihpy2.jpg",
     name: "Thu Trang",
     dob: "04/03/1998",
-    desc: " Khác với chú rể, cô dâu thuộc tuýp người hướng nội, đi du học tại Thanh Xuân nên không có nhiều bạn bè.",
     social: {
-      tel: "(+84)",
+      tel: "(+84)34245050",
       fb: "https://www.facebook.com/jan4398",
       insta: "https://www.instagram.com/jan4398/",
     },
@@ -23,9 +22,8 @@ export const AboutInfo = {
       "https://res.cloudinary.com/dl764aic5/image/upload/v1722167076/va-wedding/groom_hnqedq.jpg",
     name: "Việt Anh",
     dob: "26/11/1999",
-    desc: "Chú rể là người cởi mở, thân thiện, giao tiếp tốt và thuộc tuýp người hướng ngoại.",
     social: {
-      tel: "+84902618766",
+      tel: "(+84)983460172",
       fb: "https://www.facebook.com/adren9728",
       insta: "https://www.instagram.com/adrenalineee_404",
     },
@@ -41,7 +39,7 @@ export const CountDownInfo = {
     img: "https://res.cloudinary.com/dl764aic5/image/upload/v1722235847/va-wedding/DSC00560_1_t0cxpx.jpg",
     name: "CTM Palace",
     address: "131 Đ. Nguyễn Phong Sắc, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
-    timeStamp: 1725418800, // -> https://www.epochconverter.com/ local time
+    timeStamp: 1725764400, // -> https://www.epochconverter.com/ local time
     maps: "https://www.google.com/maps/place/CTM+Palace/@21.0410487,105.7866997,16.21z/data=!4m15!1m8!3m7!1s0x3135ab36e4c75e9b:0x28a5c02059036401!2zMTMxIMSQLiBOZ3V54buFbiBQaG9uZyBT4bqvYywgROG7i2NoIFbhu41uZyBI4bqtdSwgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWksIFZpZXRuYW0!3b1!8m2!3d21.0424974!4d105.789969!16s%2Fg%2F11gd3bv9s7!3m5!1s0x3135ab313282ca37:0x93c5760e067d47f4!8m2!3d21.0424279!4d105.7898832!16s%2Fg%2F11cs5n5yjs?entry=ttu",
   },
   bride: {
@@ -59,19 +57,19 @@ export const TimeLineBackground =
 export const TimeLine: TimeLineItem[] = [
   {
     img: "https://res.cloudinary.com/dl764aic5/image/upload/v1723105197/va-wedding/3_qnoe6r.jpg",
-    date: "20.03.2022",
-    title: "Lần đầu gặp gỡ",
-    desc: "Ngày ấy vu vơ đăng một dòng status trên facebook than thở, vu vơ đùa giỡn nói chuyện với một người xa lạ chưa từng quen.",
+    date: "04.08.2022",
+    title: "Lần đầu ngỏ lời yêu",
+    desc: "Tỏ tình ngày thất tịch, bắt đầu chặng đường đi cùng với nhau",
   },
   {
     img: "https://res.cloudinary.com/dl764aic5/image/upload/v1723105197/va-wedding/4_cy5gqc.jpg",
-    date: "04.05.2023",
-    title: "Hẹn hò",
-    desc: "Mỗi chiều cuối tuần thường chạy xe vòng quanh qua những con phố, len lỏi trong từng dòng người tấp nập",
+    date: "22.03.2024",
+    title: "Cầu hôn",
+    desc: "Cầu hôn vào ngày Trang nhận bằng Thạc sĩ, đánh dấu một chặng đường mới",
   },
   {
     img: "https://res.cloudinary.com/dl764aic5/image/upload/v1723105440/va-wedding/33_mr5dtm.jpg",
-    date: "24.08.2023",
+    date: "03.09.2024",
     title: "Lễ đính hôn",
     desc: "Chúng ta từ 2 con người xa lạ mà bước vào cuộc đời nhau. Và giờ đây chúng ta tiếp tục cùng nhau sang trang mới.",
   },
