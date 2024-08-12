@@ -5,13 +5,13 @@ require("dayjs/locale/vi");
 dayjs.locale("vi"); // switch back to default English locale globally
 
 export const metadata: Metadata = {
-  title: "Thiệp cưới Việt Anh & Thu Trang | Save The Date 18/05/2024",
+  title: "Thiệp cưới Việt Anh & Thu Trang | Save The Date 08/09/2024",
   description:
     "Việt Anh & Thu Trang - Save The Date 08/09/2024 - Hãy trân trọng những giây phút đắm say bên nhau, chia sẻ niềm vui và khắc sâu những kỷ niệm đáng nhớ.",
   openGraph: {
     type: "website",
     url: "https://adrenaline.io.vn",
-    title: "Thiệp cưới Việt Anh & Thu Trang | Save The Date 18/05/2024",
+    title: "Thiệp cưới Việt Anh & Thu Trang | Save The Date 08/09/2024",
     description:
       "Việt Anh & Thu Trang - Save The Date 08/09/2024 - Hãy trân trọng những giây phút đắm say bên nhau, chia sẻ niềm vui và khắc sâu những kỷ niệm đáng nhớ.",
     images:
