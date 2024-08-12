@@ -4,6 +4,7 @@ import { Noto_Serif_Display } from "next/font/google";
 import { RiGift2Fill, RiMap2Line, RiPhoneFill } from "react-icons/ri";
 import { BackgroundCover } from "./BackgroundCover";
 import "./header.css";
+import { AnimationTitle } from "../animation-title";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -29,9 +30,7 @@ export function Header() {
 const Title = () => {
   return (
     <div className={cn("text-[32px] font-windSong")}>
-      <p>
-        Save <span> The </span>Date
-      </p>
+      <AnimationTitle title="Save The Date" />
     </div>
   );
 };

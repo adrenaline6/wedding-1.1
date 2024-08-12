@@ -10,6 +10,7 @@ import "./album.css";
 import { AlbumImages } from "@/constants";
 import "swiper/css";
 import Image from "next/image";
+import { AnimationTitle } from "../animation-title";
 const noto = Noto_Serif_Display({
   preload: false,
 });
@@ -36,14 +37,13 @@ export function Album() {
   return (
     <section id="album">
       <div className="container">
-        <h2
+        <AnimationTitle
           className={cn(
             noto.className,
             "font-bold text-center text-primaryColor text-[32px]"
           )}
-        >
-          Album ảnh
-        </h2>
+          title="Album ảnh"
+        />
       </div>
 
       <Fancybox

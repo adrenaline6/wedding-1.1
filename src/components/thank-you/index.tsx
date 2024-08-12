@@ -10,6 +10,7 @@ import {
 } from "react-icons/ri";
 import { Reveal } from "../review";
 import Image from "next/image";
+import { AnimationTitle } from "../animation-title";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -28,27 +29,28 @@ export function ThankYou() {
         width={1400}
         height={1000}
       />
-      <Reveal className="thankyou-body container">
-        <h2
+      <div className="thankyou-body container">
+        <AnimationTitle
           className={cn(
             noto.className,
             "text-6xl aos-init aos-animate leading-[1.6]"
           )}
           data-aos="fade-up"
           data-aos-duration="2000"
-        >
-          Thank you!
-        </h2>
-        <p
-          className="text-xl text-center font-quickSand aos-init aos-animate leading-9"
-          data-aos="fade"
-          data-aos-duration="3000"
-        >
-          Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng
-          tôi.
-          <br />
-          Chân thành cảm ơn!
-        </p>
+          title="Thank you!"
+        />
+        <Reveal>
+          <p
+            className="text-xl text-center font-quickSand aos-init aos-animate leading-9"
+            data-aos="fade"
+            data-aos-duration="3000"
+          >
+            Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng
+            tôi.
+            <br />
+            Chân thành cảm ơn!
+          </p>
+        </Reveal>
         {/* <div className="social">
           <h4 className="font-quickSand text-base">Chia sẻ thiệp</h4>
           <div className="social-link">
@@ -67,7 +69,7 @@ export function ThankYou() {
             </a>
           </div>
         </div> */}
-      </Reveal>
+      </div>
     </section>
   );
 }

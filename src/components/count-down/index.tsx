@@ -12,6 +12,7 @@ import { Timer } from "../timer";
 import "./count-down.css";
 import { Heart } from "./heart";
 import Image from "next/image";
+import { AnimationTitle } from "../animation-title";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -36,11 +37,11 @@ export function Countdown() {
           <p className="text-base text-center mb-1 font-quickSand">
             CÙNG ĐẾM NGƯỢC THỜI GIAN
           </p>
-          <h2
+          <AnimationTitle
+            title="Save The Date"
             className={cn(noto.className, "text-[32px] font-bold text-center")}
-          >
-            Save The Date
-          </h2>
+          />
+
           <Heart />
           <Timer />
         </div>
@@ -80,7 +81,8 @@ export function Countdown() {
                     <span className="invi_year_text">{groomTime.year()}</span>
                   </div>
                   <p className="invi_amlich">
-                    Tức Ngày {groomLunar.day - 1}/{groomLunar.month} Năm Giáp Thìn
+                    Tức Ngày {groomLunar.day - 1}/{groomLunar.month} Năm Giáp
+                    Thìn
                   </p>
                 </div>
               </div>

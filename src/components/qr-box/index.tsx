@@ -1,5 +1,6 @@
 import { AboutInfo } from "@/constants";
 import Image from "next/image";
+import "./qr-box.css";
 
 export function QrBox() {
   return (
@@ -7,10 +8,13 @@ export function QrBox() {
       id="dialog-content"
       style={{
         display: "none",
-        maxWidth: "500px",
+        maxWidth: "1000px",
       }}
     >
-      <div className="gift-container" id="gift-container">
+      <div
+        className="flex flex-col gap-y-4 gap-x-0 md:flex-row md:gap-x-5 md:gap-y-0"
+        id="gift-container"
+      >
         <div className="gift-card">
           <div className="gift-qr">
             <Image

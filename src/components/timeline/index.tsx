@@ -5,6 +5,7 @@ import { Noto_Serif_Display } from "next/font/google";
 import { Reveal } from "../review";
 import "./timeline.css";
 import Image from "next/image";
+import { AnimationTitle } from "../animation-title";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -26,14 +27,15 @@ export function Timeline() {
       <div className="time-line container">
         <div className="section-heading">
           <p className="text-center mb-1 text-base">CÂU CHUYỆN TÌNH YÊU</p>
-          <h2
+          <AnimationTitle
             className={cn(
               noto.className,
               "font-bold text-center md:text-[54px] text-[32px]"
             )}
-          >
-            Love Story{" "}
-          </h2>
+            title="Love Story"
+          />
+
+          {/* </Anim> */}
         </div>
 
         <div className="timeline-list">

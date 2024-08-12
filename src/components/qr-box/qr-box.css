@@ -1,0 +1,13 @@
+.gift-card {
+  background-color: theme("colors.textWhite");
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 4px 0 theme("colors.primaryColor");
+}
+
+.gift-qr {
+  max-width: 300px;
+}

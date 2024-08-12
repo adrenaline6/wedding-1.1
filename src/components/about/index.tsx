@@ -5,6 +5,7 @@ import { RiFacebookFill, RiInstagramFill, RiPhoneFill } from "react-icons/ri";
 import { Reveal } from "../review";
 import "./about.css";
 import Image from "next/image";
+import { AnimationTitle } from "../animation-title";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -16,14 +17,13 @@ export function About() {
       <div className="container">
         <div className="section-heading">
           <p className="font-base text-center mb-1"></p>
-          <h2
+          <AnimationTitle
             className={cn(
               "text-[32px] font-bold text-center text-primaryColor",
               noto.className
             )}
-          >
-            Giới Thiệu
-          </h2>
+            title="Giới Thiệu"
+          />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">

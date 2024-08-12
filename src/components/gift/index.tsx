@@ -4,6 +4,7 @@ import { RiGiftFill } from "react-icons/ri";
 import { Fancybox } from "../fancybox";
 import { QrBox } from "../qr-box";
 import "./gift.css";
+import { AnimationTitle } from "../animation-title";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -14,14 +15,13 @@ export function Gift() {
     <section id="gift" className="section-gift block">
       <div className="container">
         <p className="text-base text-center mb-1"></p>
-        <h2
+        <AnimationTitle
           className={cn(
             noto.className,
             "text-primaryColor text-[32px] text-center font-bold"
           )}
-        >
-          Gift box
-        </h2>
+          title="Gift box"
+        />
         <Fancybox>
           <button
             data-fancybox
