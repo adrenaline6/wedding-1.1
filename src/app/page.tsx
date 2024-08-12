@@ -26,7 +26,7 @@ export default function Home() {
       <Gift />
       <ThankYou />
       <FloatButton />
-      {/* <MusicPlayer />*/}
+      <MusicPlayer />
     </main>
   );
 }

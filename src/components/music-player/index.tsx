@@ -1,32 +1,12 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
-import { RiMusicFill, RiVolumeMuteFill, RiVolumeUpFill } from "react-icons/ri";
+import { useRef, useState } from "react";
+import { RiVolumeMuteFill, RiVolumeUpFill } from "react-icons/ri";
 import "./music-player.css";
 
 export function MusicPlayer() {
   const [pause, setPause] = useState(true);
   const audioRef = useRef<HTMLAudioElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
-
-  useEffect(() => {
-    const handleInteraction = () => {
-      if (audioRef.current) {
-        audioRef.current.play().catch((error) => {
-          console.error("Failed to play audio:", error);
-        });
-      }
-      document.removeEventListener("click", handleInteraction);
-      document.removeEventListener("touchstart", handleInteraction);
-    };
-
-    document.addEventListener("click", handleInteraction);
-    document.addEventListener("touchstart", handleInteraction);
-
-    return () => {
-      document.removeEventListener("click", handleInteraction);
-      document.removeEventListener("touchstart", handleInteraction);
-    };
-  }, []);
 
   const onToggleMute = () => {
     const audio: Partial<HTMLAudioElement> | null =
@@ -39,7 +19,7 @@ export function MusicPlayer() {
   };
 
   return (
-    <div className="fixed right-6 top-6 z-10">
+    <div className="fixed left-6 bottom-6 z-10">
       <button
         className="btn btn-primary text-textWhite music-toggle"
         style={{
