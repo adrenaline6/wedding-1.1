@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       "Việt Anh & Thu Trang - Save The Date 08/09/2024 - Hãy trân trọng những giây phút đắm say bên nhau, chia sẻ niềm vui và khắc sâu những kỷ niệm đáng nhớ.",
     images:
-      "https://res.cloudinary.com/dl764aic5/image/upload/v1722166006/va-wedding/cover_pflqfp.jpg",
+      "https://res.cloudinary.com/dl764aic5/image/upload/v1723445667/va-wedding/31_v1ianu.jpg",
   },
 };
 export const runtime = "edge";
@@ -40,7 +40,7 @@ export default function RootLayout({
         />
         <meta
           property="twitter:image"
-          content="https://res.cloudinary.com/dl764aic5/image/upload/v1722166006/va-wedding/cover_pflqfp.jpg"
+          content="https://res.cloudinary.com/dl764aic5/image/upload/v1723445667/va-wedding/31_v1ianu.jpg"
         />
       </head>
       <body>{children}</body>
