@@ -76,7 +76,7 @@ const Date = () => {
       {". "}
       <span>{date.year()}</span>
       <div className="group-add">
-        <p className="font-windSong text-base font-light">
+        <p className="font-windSong text-lg font-light">
           Hôn lễ được tổ chức tại
         </p>
         <span className="text-xl">{CountDownInfo.groom.name}</span>
