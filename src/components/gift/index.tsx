@@ -1,10 +1,9 @@
 import { cn } from "@/utils";
-import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import { Noto_Serif_Display } from "next/font/google";
 import { RiGiftFill } from "react-icons/ri";
 import { Fancybox } from "../fancybox";
+import { QrBox } from "../qr-box";
 import "./gift.css";
-import { BankImage } from "@/constants";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -24,14 +23,15 @@ export function Gift() {
           Gift box
         </h2>
         <Fancybox>
-          <a
+          <button
+            data-fancybox
+            data-src="#dialog-content"
             className="btn btn-primary text-textWhite mt-10 gap-x-3"
-            data-fancybox="gallery"
-            href={BankImage}
           >
             <RiGiftFill size={30} />
             GỬI QUÀ ĐẾN CÔ DÂU CHÚ RỂ
-          </a>
+          </button>
+          <QrBox />
         </Fancybox>
       </div>
     </section>

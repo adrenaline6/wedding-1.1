@@ -1,9 +1,5 @@
 import { TimeLineItem } from "@/model";
 
-//gift
-export const BankImage =
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1722938083/va-wedding/IMG_1003_2_m3gma1.jpg";
-
 //about
 export const AboutInfo = {
   bride: {
@@ -16,6 +12,7 @@ export const AboutInfo = {
       fb: "https://www.facebook.com/jan4398",
       insta: "https://www.instagram.com/jan4398/",
     },
+    qr: "https://res.cloudinary.com/dl764aic5/image/upload/v1723449135/va-wedding/bride_qr_z3i91l.jpg",
   },
   groom: {
     image:
@@ -27,6 +24,7 @@ export const AboutInfo = {
       fb: "https://www.facebook.com/adren9728",
       insta: "https://www.instagram.com/adrenalineee_404",
     },
+    qr: "https://res.cloudinary.com/dl764aic5/image/upload/v1723448983/va-wedding/groom_qr_k8nm9p.jpg",
   },
 };
 

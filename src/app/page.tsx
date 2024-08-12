@@ -11,6 +11,7 @@ import {
   Timeline,
   Video,
 } from "@/components";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
       <Gift />
       <ThankYou />
       <FloatButton />
-      {/* <MusicPlayer /> */}
+      {/* <MusicPlayer />*/}
     </main>
   );
 }

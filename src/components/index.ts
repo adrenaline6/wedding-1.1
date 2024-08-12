@@ -7,6 +7,7 @@ export * from "./gift";
 export * from "./header";
 export * from "./message";
 export * from "./music-player";
+export * from "./qr-box";
 export * from "./review";
 export * from "./thank-you";
 export * from "./timeline";
