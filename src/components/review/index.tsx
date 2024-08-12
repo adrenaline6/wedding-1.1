@@ -6,7 +6,7 @@ interface ReviewProps extends React.HTMLAttributes<HTMLDivElement> {
   once?: boolean;
 }
 
-export function Review(props: ReviewProps) {
+export function Reveal(props: ReviewProps) {
   const { once = true, children, ...rest } = props;
   return (
     <motion.div

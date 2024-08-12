@@ -4,7 +4,7 @@ import { cn, getDayJs } from "@/utils";
 import dayjs from "dayjs";
 import { Noto_Serif_Display } from "next/font/google";
 import { useEffect, useState } from "react";
-import { Review } from "../review";
+import { Reveal } from "../review";
 const duration = require("dayjs/plugin/duration");
 dayjs.extend(duration);
 
@@ -52,7 +52,7 @@ export function Timer() {
 
   return (
     <>
-      <Review once={false}>
+      <Reveal once={false}>
         {hasReached ? (
           <div id="content" className="emoji">
             <span>Đã kết hôn</span>
@@ -111,7 +111,7 @@ export function Timer() {
             </ul>
           </div>
         )}
-      </Review>
+      </Reveal>
     </>
   );
 }

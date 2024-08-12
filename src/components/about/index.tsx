@@ -2,7 +2,7 @@ import { AboutInfo } from "@/constants";
 import { cn } from "@/utils";
 import { Noto_Serif_Display } from "next/font/google";
 import { RiFacebookFill, RiInstagramFill, RiPhoneFill } from "react-icons/ri";
-import { Review } from "../review";
+import { Reveal } from "../review";
 import "./about.css";
 import Image from "next/image";
 
@@ -42,7 +42,7 @@ export function About() {
                 height={500}
               />
             </div>
-            <Review className="about-body aos-init" once={false}>
+            <Reveal className="about-body aos-init" once={false}>
               <h3 className={cn("text-[32px]", noto.className)}>
                 {AboutInfo.bride.name}
               </h3>
@@ -60,7 +60,7 @@ export function About() {
                   <RiInstagramFill className="hover:text-primaryColor" />
                 </a>
               </div>
-            </Review>
+            </Reveal>
           </div>
           <div className="about-card" style={{ order: 1 }}>
             <div className="about-media">
@@ -72,7 +72,7 @@ export function About() {
                 height={500}
               />
             </div>
-            <Review className="about-body aos-init" once={false}>
+            <Reveal className="about-body aos-init" once={false}>
               <h3 className={cn("text-[32px]", noto.className)}>
                 {AboutInfo.groom.name}
               </h3>
@@ -90,11 +90,10 @@ export function About() {
                   <RiInstagramFill className="hover:text-primaryColor" />
                 </a>
               </div>
-            </Review>
+            </Reveal>
           </div>
         </div>
       </div>
     </section>
   );
 }
-

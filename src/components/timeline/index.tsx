@@ -2,7 +2,7 @@ import { TimeLine, TimeLineBackground } from "@/constants";
 import { TimeLineItem } from "@/model";
 import { cn } from "@/utils";
 import { Noto_Serif_Display } from "next/font/google";
-import { Review } from "../review";
+import { Reveal } from "../review";
 import "./timeline.css";
 import Image from "next/image";
 
@@ -52,7 +52,7 @@ const TimelineItem = (props: TimelineItemProps) => {
     index,
   } = props;
   return (
-    <Review>
+    <Reveal>
       <div
         className="timeline-item aos-init aos-animate"
         data-aos="fade-up"
@@ -80,6 +80,6 @@ const TimelineItem = (props: TimelineItemProps) => {
           <p></p>
         </div>
       </div>
-    </Review>
+    </Reveal>
   );
 };

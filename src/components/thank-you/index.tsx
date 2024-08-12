@@ -8,7 +8,7 @@ import {
   RiPinterestFill,
   RiTwitterXFill,
 } from "react-icons/ri";
-import { Review } from "../review";
+import { Reveal } from "../review";
 import Image from "next/image";
 
 const noto = Noto_Serif_Display({
@@ -28,7 +28,7 @@ export function ThankYou() {
         width={1400}
         height={1000}
       />
-      <Review className="thankyou-body container">
+      <Reveal className="thankyou-body container">
         <h2
           className={cn(
             noto.className,
@@ -40,14 +40,16 @@ export function ThankYou() {
           Thank you!
         </h2>
         <p
-          className="text-xl text-center font-quickSand aos-init aos-animate"
+          className="text-xl text-center font-quickSand aos-init aos-animate leading-9"
           data-aos="fade"
           data-aos-duration="3000"
         >
           Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng
-          tôi. Chân thành cảm ơn!
+          tôi.
+          <br />
+          Chân thành cảm ơn!
         </p>
-        <div className="social">
+        {/* <div className="social">
           <h4 className="font-quickSand text-base">Chia sẻ thiệp</h4>
           <div className="social-link">
             <a href="#" className="facebook">
@@ -56,16 +58,16 @@ export function ThankYou() {
             <a href="#" className="instargram">
               <RiInstagramFill />
             </a>
-            {/* <a href="#" className="twiter">
+            <a href="#" className="twiter">
               <i className="ri-twitter-x-line"></i>
               <RiTwitterXFill />
             </a>
             <a href="#" className="pinterest">
               <RiPinterestFill />
-            </a> */}
+            </a>
           </div>
-        </div>
-      </Review>
+        </div> */}
+      </Reveal>
     </section>
   );
 }
