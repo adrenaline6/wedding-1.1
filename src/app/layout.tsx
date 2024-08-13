@@ -32,7 +32,10 @@ export default function RootLayout({
         <meta name="title" content={metadata.title as string} />
         <meta name="description" content={metadata.description as string} />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://adrenaline.io.vn/" />
+        <meta
+          property="twitter:url"
+          content="https://wedding.adrenaline.io.vn"
+        />
         <meta property="twitter:title" content={metadata.title as string} />
         <meta
           property="twitter:description"

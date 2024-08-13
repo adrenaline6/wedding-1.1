@@ -51,7 +51,7 @@ export const CountDownInfo = {
 
 //timeline
 export const TimeLineBackground =
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723106156/va-wedding/29_wkogdj.jpg";
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105571/va-wedding/38_ueywad.jpg";
 export const TimeLine: TimeLineItem[] = [
   {
     img: "https://res.cloudinary.com/dl764aic5/image/upload/v1723105197/va-wedding/3_qnoe6r.jpg",
@@ -60,7 +60,7 @@ export const TimeLine: TimeLineItem[] = [
     desc: "Tỏ tình ngày thất tịch, bắt đầu chặng đường đi cùng với nhau",
   },
   {
-    img: "https://res.cloudinary.com/dl764aic5/image/upload/v1723105197/va-wedding/4_cy5gqc.jpg",
+    img: "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105197/va-wedding/4_cy5gqc.jpg",
     date: "22.03.2024",
     title: "Cầu hôn",
     desc: "Cầu hôn vào ngày Trang nhận bằng Thạc sĩ, đánh dấu một chặng đường mới",
@@ -81,30 +81,30 @@ export const TimeLine: TimeLineItem[] = [
 
 //album
 export const AlbumImages = [
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105197/va-wedding/2_xmzbre.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105197/va-wedding/4_cy5gqc.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105197/va-wedding/3_qnoe6r.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105210/va-wedding/7_vydbfa.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105211/va-wedding/6_lwrljh.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105211/va-wedding/8_mzejad.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105231/va-wedding/16_chiyt5.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105231/va-wedding/12_jm3n2s.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105232/va-wedding/11_aqobxj.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105232/va-wedding/18_hv4yp1.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105233/va-wedding/14_flzfdy.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105416/va-wedding/19_oxa9tw.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105415/va-wedding/25_berf9d.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105414/va-wedding/23_tpgppe.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105414/va-wedding/22_irjvke.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105415/va-wedding/21_vw2stf.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105440/va-wedding/33_mr5dtm.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105440/va-wedding/32_lr4krx.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105441/va-wedding/31_xdyose.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105573/va-wedding/36_vlqqdp.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105571/va-wedding/38_ueywad.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105571/va-wedding/37_easaqz.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723106156/va-wedding/29_wkogdj.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723106156/va-wedding/28_eypjjm.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105197/va-wedding/2_xmzbre.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105197/va-wedding/4_cy5gqc.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105197/va-wedding/3_qnoe6r.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105210/va-wedding/7_vydbfa.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105211/va-wedding/6_lwrljh.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105211/va-wedding/8_mzejad.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105231/va-wedding/16_chiyt5.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105231/va-wedding/12_jm3n2s.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105232/va-wedding/11_aqobxj.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105232/va-wedding/18_hv4yp1.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105233/va-wedding/14_flzfdy.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105416/va-wedding/19_oxa9tw.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105415/va-wedding/25_berf9d.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105414/va-wedding/23_tpgppe.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105414/va-wedding/22_irjvke.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105415/va-wedding/21_vw2stf.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105440/va-wedding/33_mr5dtm.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105440/va-wedding/32_lr4krx.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105441/va-wedding/31_xdyose.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105573/va-wedding/36_vlqqdp.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105571/va-wedding/38_ueywad.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105571/va-wedding/37_easaqz.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723106156/va-wedding/29_wkogdj.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723106156/va-wedding/28_eypjjm.jpg",
 ];
 
 //common

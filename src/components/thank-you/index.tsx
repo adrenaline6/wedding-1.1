@@ -20,7 +20,7 @@ export function ThankYou() {
   return (
     <section id="thankyou" className="section-thankyou bg_overlay">
       <Image
-        src="https://res.cloudinary.com/dl764aic5/image/upload/v1722167432/va-wedding/end_r9fgxh.jpg"
+        src="https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1722167432/va-wedding/end_r9fgxh.jpg"
         alt=""
         className="thankyou-bg thankyou_img"
         style={{
