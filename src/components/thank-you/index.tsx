@@ -1,16 +1,9 @@
-import React from "react";
-import "./thank-you.css";
-import { Noto_Serif_Display } from "next/font/google";
 import { cn } from "@/utils";
-import {
-  RiFacebookFill,
-  RiInstagramFill,
-  RiPinterestFill,
-  RiTwitterXFill,
-} from "react-icons/ri";
-import { Reveal } from "../review";
+import { Noto_Serif_Display } from "next/font/google";
 import Image from "next/image";
 import { AnimationTitle } from "../animation-title";
+import { Reveal } from "../review";
+import "./thank-you.css";
 
 const noto = Noto_Serif_Display({
   preload: false,
@@ -20,7 +13,7 @@ export function ThankYou() {
   return (
     <section id="thankyou" className="section-thankyou bg_overlay">
       <Image
-        src="https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1722167432/va-wedding/end_r9fgxh.jpg"
+        src="https://res.cloudinary.com/dl764aic5/image/upload/v1723602743/va-wedding/end_v0xqeh.jpg"
         alt=""
         className="thankyou-bg thankyou_img"
         style={{

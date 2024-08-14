@@ -51,7 +51,7 @@ export const CountDownInfo = {
 
 //timeline
 export const TimeLineBackground =
-  "https://res.cloudinary.com/dl764aic5/image/upload/v1723105571/va-wedding/38_ueywad.jpg";
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723602216/va-wedding/14_yuznc4.jpg";
 export const TimeLine: TimeLineItem[] = [
   {
     img: "https://res.cloudinary.com/dl764aic5/image/upload/v1723105197/va-wedding/3_qnoe6r.jpg",
@@ -91,7 +91,7 @@ export const AlbumImages = [
   "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105231/va-wedding/12_jm3n2s.jpg",
   "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105232/va-wedding/11_aqobxj.jpg",
   "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105232/va-wedding/18_hv4yp1.jpg",
-  "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105233/va-wedding/14_flzfdy.jpg",
+  "https://res.cloudinary.com/dl764aic5/image/upload/v1723602216/va-wedding/14_yuznc4.jpg",
   "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105416/va-wedding/19_oxa9tw.jpg",
   "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105415/va-wedding/25_berf9d.jpg",
   "https://res.cloudinary.com/dl764aic5/image/upload/w_1440/v1723105414/va-wedding/23_tpgppe.jpg",
